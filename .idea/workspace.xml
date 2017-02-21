@@ -228,8 +228,8 @@
       <file leaf-file-name="packages" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.meteor/packages">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="19" />
+            <state relative-caret-position="315">
+              <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -603,7 +603,7 @@
       <workItem from="1487498878418" duration="2720000" />
       <workItem from="1487602413015" duration="1637000" />
       <workItem from="1487662924552" duration="9007000" />
-      <workItem from="1487674450039" duration="2011000" />
+      <workItem from="1487674450039" duration="2219000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1487147334833</created>
@@ -640,11 +640,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487675964539</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="schema deleted&#10;">
+      <created>1487684693243</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1487684693243</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36881000" />
+    <option name="totallyTimeSpent" value="37089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="24" width="1323" height="744" extended-state="6" />
@@ -681,7 +688,8 @@
     <MESSAGE value="stylish sheets&#10;" />
     <MESSAGE value="side bar deleted&#10;" />
     <MESSAGE value="template confirmed and login, register forms created" />
-    <option name="LAST_COMMIT_MESSAGE" value="template confirmed and login, register forms created" />
+    <MESSAGE value="schema deleted&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="schema deleted&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -862,8 +870,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.meteor/packages">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="315">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding />
         </state>
       </provider>
