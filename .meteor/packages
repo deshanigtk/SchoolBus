@@ -21,3 +21,4 @@ shell-server@0.2.1            # Server-side component of the `meteor shell` comm
 meteortoys:allthings
 kadira:blaze-layout
 iron:router
+accounts-password
