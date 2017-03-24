@@ -2,142 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c127b5f-f34a-47ad-9b30-4130d1cd5781" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/common/scripts/forgot_password.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/common/scripts/register_parent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/common/scripts/reset_password.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/common/scripts/sign_in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/common/templates/forgot_password.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/common/templates/reset_password.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/layouts/templates/common_layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/layouts/templates/register_layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/partials/templates/footer.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/layouts/login_layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/layouts/register_layout.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_npm.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_npm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/CHANGES.md" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/CHANGES.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/LICENSE.md" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/build-config.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/build-config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/contents.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/contents.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/af.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/af.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ar.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/bg.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/bn.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/bn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/bs.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/bs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ca.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/cs.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/cy.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/cy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/da.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/da.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/de-ch.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/de-ch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/de.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/el.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/el.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/en-au.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/en-au.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/en-ca.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/en-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/en-gb.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/en-gb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/en.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/eo.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/eo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/es.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/es.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/et.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/et.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/eu.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/eu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fa.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fi.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fo.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fr-ca.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fr-ca.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fr.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/gl.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/gl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/gu.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/gu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/he.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/he.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/hi.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/hi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/hr.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/hr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/hu.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/hu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/id.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/id.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/is.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/is.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/it.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/it.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ja.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ja.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ka.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ka.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/km.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/km.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ko.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ko.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ku.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ku.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/lt.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/lt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/lv.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/lv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/mk.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/mk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/mn.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/mn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ms.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/nb.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/nb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/nl.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/nl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/no.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/no.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/pl.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/pl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/pt-br.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/pt-br.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/pt.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/pt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ro.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ru.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/si.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/si.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sk.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sl.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sq.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sr-latn.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sr-latn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sr.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sv.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/th.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/th.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/tr.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/tr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/tt.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/tt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ug.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ug.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/uk.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/uk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/vi.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/vi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/zh-cn.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/zh-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/lang/zh.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/zh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/scayt/CHANGELOG.md" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/scayt/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/scayt/LICENSE.md" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/scayt/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/scayt/README.md" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/scayt/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/scayt/dialogs/toolbar.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/scayt/dialogs/toolbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/LICENSE.md" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/README.md" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/css/samples.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/css/samples.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/index.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/js/sample.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/js/sample.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/ajax.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/ajax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/api.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/api.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/appendto.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/appendto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/assets/posteddata.php" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/assets/posteddata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/datafiltering.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/datafiltering.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/dialog/assets/my_dialog.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/dialog/assets/my_dialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/dialog/dialog.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/dialog/dialog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/divreplace.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/divreplace.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/enterkey/enterkey.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/enterkey/enterkey.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/htmlwriter/outputforflash.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/htmlwriter/outputforflash.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/htmlwriter/outputhtml.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/htmlwriter/outputhtml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/index.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/inlineall.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/inlineall.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/inlinebycode.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/inlinebycode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/inlinetextarea.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/inlinetextarea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/jquery.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/jquery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/magicline/magicline.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/magicline/magicline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/readonly.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/readonly.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/replacebyclass.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/replacebyclass.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/replacebycode.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/replacebycode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/sample.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/sample.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/sample.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/sample.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/sample_posteddata.php" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/sample_posteddata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/tabindex.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/tabindex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/toolbar/toolbar.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/toolbar/toolbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/uicolor.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/uicolor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/uilanguages.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/uilanguages.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/wysiwygarea/fullpage.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/wysiwygarea/fullpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/xhtmlstyle.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/xhtmlstyle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/css/fontello.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/index.html" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog_ie.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog_ie.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog_ie7.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog_ie7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog_ie8.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog_ie8.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog_iequirks.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog_iequirks.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_gecko.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_gecko.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_ie.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_ie.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_ie7.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_ie7.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_ie8.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_ie8.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_iequirks.css" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_iequirks.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/readme.md" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/ckeditor/styles.js" afterPath="$PROJECT_DIR$/public/plugins/ckeditor/styles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/routes.js" afterPath="$PROJECT_DIR$/lib/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/common/login.html" afterPath="$PROJECT_DIR$/client/common/templates/sign_in.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/common/register.html" afterPath="$PROJECT_DIR$/client/common/templates/register_parent.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/layouts/master_layout.html" afterPath="$PROJECT_DIR$/client/layouts/templates/master_layout.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/partials/nav_bar.html" afterPath="$PROJECT_DIR$/client/partials/templates/nav_bar.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/partials/side_bar.html" afterPath="$PROJECT_DIR$/client/partials/templates/side_bar.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -155,61 +44,71 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/main.html">
+      <file leaf-file-name="master_layout.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/layouts/templates/master_layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/common/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/common/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+            <state relative-caret-position="187">
+              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="register_layout.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/layouts/register_layout.html">
+        <entry file="file://$PROJECT_DIR$/client/layouts/templates/register_layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login_layout.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/layouts/login_layout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="34">
               <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common_layout.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/layouts/templates/common_layout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register_parent.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/common/templates/register_parent.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register_parent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/common/scripts/register_parent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sign_in.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/common/scripts/sign_in.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sign_in.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/common/templates/sign_in.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -218,38 +117,28 @@
       <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+            <state relative-caret-position="510">
+              <caret line="57" column="3" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="packages" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.meteor/packages">
+      <file leaf-file-name="reset_password.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/common/scripts/reset_password.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+            <state relative-caret-position="68">
+              <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="versions" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.meteor/versions">
+      <file leaf-file-name="reset_password.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/common/templates/reset_password.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav_bar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/partials/nav_bar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2235">
-              <caret line="149" column="42" lean-forward="false" selection-start-line="149" selection-start-column="42" selection-end-line="149" selection-end-column="42" />
+            <state relative-caret-position="153">
+              <caret line="9" column="76" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -277,19 +166,33 @@
         <option value="$PROJECT_DIR$/public/color/default.css" />
         <option value="$PROJECT_DIR$/public/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/client/partials/nav_bar.html" />
         <option value="$PROJECT_DIR$/client/layouts/master_layout.html" />
         <option value="$PROJECT_DIR$/client/partials/side_bar.html" />
-        <option value="$PROJECT_DIR$/client/main.html" />
         <option value="$PROJECT_DIR$/client/common/login.js" />
-        <option value="$PROJECT_DIR$/client/layouts/login_layout.html" />
         <option value="$PROJECT_DIR$/client/login/main.html" />
         <option value="$PROJECT_DIR$/client/common/login.html" />
         <option value="$PROJECT_DIR$/client/layouts/register_lyout.html" />
-        <option value="$PROJECT_DIR$/client/main.js" />
-        <option value="$PROJECT_DIR$/lib/routes.js" />
         <option value="$PROJECT_DIR$/client/common/register.html" />
+        <option value="$PROJECT_DIR$/client/common/templates/login.html" />
+        <option value="$PROJECT_DIR$/client/common/templates/register.html" />
+        <option value="$PROJECT_DIR$/client/layouts/login_layout.html" />
+        <option value="$PROJECT_DIR$/client/layouts/register_layout.html" />
+        <option value="$PROJECT_DIR$/client/layouts/templates/common_layout.html" />
+        <option value="$PROJECT_DIR$/client/layouts/templates/login_layout.html" />
         <option value="$PROJECT_DIR$/.meteor/packages" />
+        <option value="$PROJECT_DIR$/client/layouts/templates/master_layout.html" />
+        <option value="$PROJECT_DIR$/client/partials/footer.html" />
+        <option value="$PROJECT_DIR$/client/partials/nav_bar.html" />
+        <option value="$PROJECT_DIR$/client/common/scripts/sign-in.js" />
+        <option value="$PROJECT_DIR$/client/common/templates/reset_password.html" />
+        <option value="$PROJECT_DIR$/client/common/scripts/reset_password.js" />
+        <option value="$PROJECT_DIR$/client/common/templates/forgot_password.html" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/client/main.js" />
+        <option value="$PROJECT_DIR$/client/main.html" />
+        <option value="$PROJECT_DIR$/client/common/templates/register_parent.html" />
+        <option value="$PROJECT_DIR$/client/common/scripts/register_parent.js" />
+        <option value="$PROJECT_DIR$/lib/routes.js" />
       </list>
     </option>
   </component>
@@ -305,9 +208,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
-    <option name="y" value="24" />
-    <option name="width" value="1323" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectView">
@@ -325,95 +228,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
+              <option name="myItemId" value="SchoolBus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
+              <option name="myItemId" value="SchoolBus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
+              <option name="myItemId" value="SchoolBus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
+              <option name="myItemId" value="SchoolBus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -423,11 +257,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
+              <option name="myItemId" value="SchoolBus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
+              <option name="myItemId" value="SchoolBus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -437,29 +271,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
+              <option name="myItemId" value="SchoolBus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
+              <option name="myItemId" value="SchoolBus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -470,14 +286,18 @@
               <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
+              <option name="myItemId" value="SchoolBus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
+              <option name="myItemId" value="SchoolBus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -488,14 +308,40 @@
               <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
+              <option name="myItemId" value="SchoolBus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schoolbus" />
+              <option name="myItemId" value="SchoolBus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolBus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SchoolBus" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -505,11 +351,71 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="External Dependencies">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="F:">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="easy_pharma">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="SchoolBus">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="SchoolBus">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="public">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="SchoolBus">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="client">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/easy_pharma" />
     <property name="HbShouldOpenHtmlAsHb" value="enabled" />
     <property name="js.meteor.project" value="true" />
     <property name="js.meteor.library.was.enabled" value="true" />
@@ -518,7 +424,15 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\SchoolBus\client\partials\templates" />
+      <recent name="F:\SchoolBus\client\layouts\templates" />
+      <recent name="F:\SchoolBus\client\common\templates" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\SchoolBus\client\common\scripts" />
+      <recent name="F:\SchoolBus\client\common\templates" />
+      <recent name="F:\SchoolBus\client\partials" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/js" />
     </key>
@@ -604,6 +518,15 @@
       <workItem from="1487602413015" duration="1637000" />
       <workItem from="1487662924552" duration="9007000" />
       <workItem from="1487674450039" duration="2703000" />
+      <workItem from="1490058260874" duration="3409000" />
+      <workItem from="1490166179147" duration="543000" />
+      <workItem from="1490242019844" duration="1717000" />
+      <workItem from="1490248975499" duration="6584000" />
+      <workItem from="1490265517780" duration="195000" />
+      <workItem from="1490268742516" duration="25000" />
+      <workItem from="1490284630816" duration="10032000" />
+      <workItem from="1490322569290" duration="3022000" />
+      <workItem from="1490330026535" duration="7633000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1487147334833</created>
@@ -665,21 +588,21 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37573000" />
+    <option name="totallyTimeSpent" value="70733000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="24" width="1323" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.266062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2715959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -689,6 +612,25 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18086697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25402635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18086697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -708,50 +650,12 @@
     <option name="LAST_COMMIT_MESSAGE" value="account password add&#10;" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/login/main.html" />
-    <entry file="file://$PROJECT_DIR$/client/layouts/master_layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/packages">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css" />
-    <entry file="file://$PROJECT_DIR$/client/partials/nav_bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/partials/side_bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css.map" />
-    <entry file="file://$PROJECT_DIR$/client/main.css" />
     <entry file="file://$PROJECT_DIR$/client/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -790,104 +694,165 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/partials/side_bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/common/login.js" />
     <entry file="file://$PROJECT_DIR$/client/login/main.html" />
-    <entry file="file://$PROJECT_DIR$/client/layouts/master_layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/common/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/layouts/login_layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.meteor/versions">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/layouts/templates/login_layout.html" />
+    <entry file="file://$PROJECT_DIR$/.meteor/packages">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/common/templates/forgot_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/partials/templates/side_bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/partials/nav_bar.html">
+    <entry file="file://$PROJECT_DIR$/client/partials/templates/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2235">
-          <caret line="149" column="42" lean-forward="false" selection-start-line="149" selection-start-column="42" selection-end-line="149" selection-end-column="42" />
+        <state relative-caret-position="204">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.js">
+    <entry file="file://$PROJECT_DIR$/client/partials/templates/nav_bar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        <state relative-caret-position="782">
+          <caret line="46" column="30" lean-forward="false" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="476">
+          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/common/scripts/forgot_password.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/layouts/templates/master_layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/layouts/templates/register_layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/layouts/templates/common_layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/common/templates/reset_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="76" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/common/templates/register_parent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/common/scripts/reset_password.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        <state relative-caret-position="510">
+          <caret line="57" column="3" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/layouts/register_layout.html">
+    <entry file="file://$PROJECT_DIR$/client/common/scripts/register_parent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="34">
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/common/register.html">
+    <entry file="file://$PROJECT_DIR$/client/common/templates/sign_in.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        <state relative-caret-position="342">
+          <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/packages">
+    <entry file="file://$PROJECT_DIR$/client/common/scripts/sign_in.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        <state relative-caret-position="170">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
