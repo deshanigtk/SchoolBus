@@ -1,0 +1,111 @@
+<template name="register_driver">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Register Drivers
+            <small>Enter driver details and school service details</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="active">Register Drivers</li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <!-- Your Page Content Here -->
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-8">
+
+                <!-- general form elements -->
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Enter Driver Details</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <!-- form start -->
+                    <form role="form">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label for="driverFirstName">First Name</label>
+                                <input type="text" class="form-control" id="driverFirstName"
+                                       placeholder="Enter driver's first name" name="driverFirstName">
+                            </div>
+                            <div class="form-group">
+                                <label for="driverLastName">Last Name</label>
+                                <input type="text" class="form-control" id="driverLastName"
+                                       placeholder="Enter driver's last name" name="driverLastName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="driverContactNo">Contact Number</label>
+                                <input type="text" class="form-control" id="driverContactNo"
+                                       placeholder="Enter contact number" name="driverContactNo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="driverEmail">Email Address</label>
+                                <input type="email" class="form-control" id="driverEmail"
+                                       placeholder="Enter email" name="driverEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="driverImage">Driver Image</label>
+                                <input type="file" id="driverImage" name="driverImage">
+
+                                <p class="help-block">Upload driver image.</p>
+                            </div>
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Enter School Service Details</h3>
+                            </div>
+                            <div class="form-group">
+                                <label>Vehicle Type</label>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                                               checked>
+                                        Van
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                        Bus
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="seatCount">Seat Count</label>
+                                <input type="number" class="form-control" id="seatCount" min="0"
+                                       placeholder="Enter seat count" name="seatCount" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="plateNo">Plate Number</label>
+                                <input type="email" class="form-control" id="plateNo"
+                                       placeholder="Enter plate no" name="plateNo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="schoolServiceImage">School Service Image</label>
+                                <input type="file" id="schoolServiceImage" name="schoolServiceImage">
+
+                                <p class="help-block">Upload school service image.</p>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+
+                        <div class="box-footer">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button id="cancel" type="button" class="btn btn-default btn-block">Cancel</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button id="submit" type="submit" class="btn btn-primary btn-block">Create</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.box -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </section>
+</template>

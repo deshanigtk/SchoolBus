@@ -19,18 +19,21 @@ Template.sign_in.events({
 
                 $('#submit').removeAttr("disabled");
             } else {
-                if(!Roles.userIsInRole(Meteor.userId(),'active')){
+                if (!Roles.userIsInRole(Meteor.userId(), 'active')) {
                     return Router.go('account-deactivated');
                 }
-                if(Roles.userIsInRole(Meteor.userId(),'parent')){
-                    window.location.href=Meteor.absoluteUrl('parent-dashboard')
+                if (Roles.userIsInRole(Meteor.userId(), 'parent')) {
+                    window.location.href = Meteor.absoluteUrl('parent-dashboard')
                 }
-                if(Roles.userIsInRole(Meteor.userId(),'driver')){
-                    window.location.href=Meteor.absoluteUrl('driver-dashboard');
+                if (Roles.userIsInRole(Meteor.userId(), 'driver')) {
+                    window.location.href = Meteor.absoluteUrl('driver-dashboard');
                 }
-
             }
         });
+    },
+    'click #forgot_password': function (event) {
+        event.preventDefault();
 
+        return Router.go('forgot-password');
     }
 });
