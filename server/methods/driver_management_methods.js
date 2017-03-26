@@ -1,17 +1,17 @@
 Meteor.methods({
-    create_driver: function (driverFirstName, driverLastName, driverContactNo, driverEmail, vehicleType, seatCount, plateNo) {
+    create_driver: function (driver) {
 
         const user_id = Accounts.createUser({
-            email: driverEmail,
+            email: driver.driverEmail,
 
             profile: {
-                first_name: driverFirstName,
-                last_name: driverLastName,
-                contact_no: driverContactNo,
-                email_address: driverEmail,
-                vehicle_type: vehicleType,
-                seat_count: seatCount,
-                plate_no: plateNo
+                first_name: driver.driverFirstName,
+                last_name: driver.driverLastName,
+                contact_no: driver.driverContactNo,
+                email_address: driver.driverEmail,
+                vehicle_type: driver.vehicleType,
+                seat_count: driver.seatCount,
+                plate_no: driver.plateNo
             }
         });
 

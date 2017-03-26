@@ -29,3 +29,7 @@ twbs:bootstrap
 aldeed:simple-schema
 ostrio:files
 dburles:google-maps
+
+practicalmeteor:mocha
+dburles:factory
+xolvio:cleaner
