@@ -19,10 +19,10 @@ Template.register_parent.events({
                 password: passwordVal,
 
                 profile: {
-                    parent_first_name: firstNameVal,
-                    parent_last_name: lastNameVal,
-                    parent_nic: nicVal,
-                    parent_contact: contactVal,
+                    first_name: firstNameVal,
+                    last_name: lastNameVal,
+                    nic: nicVal,
+                    contact: contactVal,
                 }
             });
 

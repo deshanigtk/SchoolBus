@@ -88,6 +88,7 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/ecmascript-runtime/0.3.15/web.browser/runtime-tests.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/ecmascript-runtime/0.3.15/web.browser/runtime.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-var/1.0.11/web.browser/reactive-var.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/dburles_google-maps/1.1.5/web.browser/google-maps.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/fastclick/1.0.13/web.browser/pre.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/observe-sequence/1.0.14/web.browser/observe_sequence.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/fastclick/1.0.13/web.browser/post.js" />
@@ -423,6 +424,7 @@
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/ecmascript-runtime/0.3.15/web.browser/runtime-tests.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/ecmascript-runtime/0.3.15/web.browser/runtime.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-var/1.0.11/web.browser/reactive-var.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/dburles_google-maps/1.1.5/web.browser/google-maps.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/fastclick/1.0.13/web.browser/pre.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/observe-sequence/1.0.14/web.browser/observe_sequence.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/fastclick/1.0.13/web.browser/post.js" />
