@@ -22,6 +22,7 @@ Template.register_driver.events({
             if (error !== undefined) {
                 console.log(error);
             } else {
+                $('#submit').removeAttr("disabled");
                 window.location.href = Meteor.absoluteUrl("register-driver");
             }
         });

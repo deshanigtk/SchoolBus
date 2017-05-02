@@ -2,108 +2,123 @@
     <section class="content">
         <!-- Your Page Content Here -->
         <div class="row">
-            <!-- left column -->
-            <div class="col-md-6">
-
-                <!-- general form elements -->
-                <div class="box box-primary">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Driver Profile</h3>
-                    </div>
-                    <!-- /.box-header -->
-                    <!-- form start -->
-                    <form role="form">
-                        <div class="box-body">
-                            <div class="form-group">
-                                <label for="driverFirstName">First Name</label>
-                                <input type="text" class="form-control" id="driverFirstName" name="driverFirstName"
-                                       value="Kumar" disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="driverLastName">Last Name</label>
-                                <input type="text" class="form-control" id="driverLastName" name="driverLastName"
-                                       value="Sangakkar" disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="driverContactNo">Contact Number</label>
-                                <input type="text" class="form-control" id="driverContactNo" name="driverContactNo"
-                                       value="0716547982" disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="driverEmail">Email Address</label>
-                                <input type="email" class="form-control" id="driverEmail" name="driverEmail"
-                                       value="kumarsanga@gmail.com" disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="vehicleType">Vehicle Type</label>
-                                <input type="text" class="form-control" id="vehicleType" name="vehicleType" value="Bus"
-                                       disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="seatCount">Seat Count</label>
-                                <input type="number" class="form-control" id="seatCount" name="seatCount" value=10
-                                       disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="plateNo">Plate Number</label>
-                                <input type="text" class="form-control" id="plateNo" name="vehicleType" value="Bus"
-                                       disabled>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-6">
-
-                <!-- general form elements -->
-                <div class="box box-primary">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Feedback</h3>
-                    </div>
-                    <!-- /.box-header -->
-                    <!-- form start -->
-                    <form role="form">
-                        <div class="box-body">
-                            <div class="form-group">
-                                <label for="driverFirstName">First Name</label>
-                                <input type="text" class="form-control" id="driverFirstName" name="driverFirstName"
-                                       value="Kumar" disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="driverLastName">Last Name</label>
-                                <input type="text" class="form-control" id="driverLastName" name="driverLastName"
-                                       value="Sangakkar" disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="driverContactNo">Contact Number</label>
-                                <input type="text" class="form-control" id="driverContactNo" name="driverContactNo"
-                                       value="0716547982" disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="driverEmail">Email Address</label>
-                                <input type="email" class="form-control" id="driverEmail" name="driverEmail"
-                                       value="kumarsanga@gmail.com" disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="vehicleType">Vehicle Type</label>
-                                <input type="text" class="form-control" id="vehicleType" name="vehicleType" value="Bus"
-                                       disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="seatCount">Seat Count</label>
-                                <input type="number" class="form-control" id="seatCount" name="seatCount" value=10
-                                       disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="plateNo">Plate Number</label>
-                                <input type="text" class="form-control" id="plateNo" name="vehicleType" value="Bus"
-                                       disabled>
-                            </div>
-                        </div>
-                    </form>
+            <div class="col-md-4">
+                <div class="row">
+                    <button type="button" class="btn-lg bg-purple btn-flat margin">Send Request</button>
                 </div>
             </div>
         </div>
-        {{> Template.dynamic template=map_element}}
+        <div class="row">
+            <div class="col-md-12">
+                <!-- left column -->
+                <!-- Widget: user widget style 1 -->
+                <div class="box box-widget widget-user-2">
+                    <!-- Add the bg color to the header using any of the bg-* classes -->
+                    <div class="widget-user-header bg-aqua">
+                        <div class="widget-user-image">
+                            <img class="img-circle" src="../dist/img/user7-128x128.jpg" alt="User Avatar">
+                        </div>
+                        <!-- /.widget-user-image -->
+                        <h3 class="widget-user-username">Nimal Kumara</h3>
+                        <h5 class="widget-user-desc">Lead Developer</h5>
+                    </div>
+                    <div class="box-footer no-padding">
+                        <ul class="nav nav-stacked">
+                            <li><a>Email: nimalkumara@gmail.com <span
+                                    class="pull-right badge bg-blue-gradient">31</span></a></li>
+                            <li><a>Contact No: 07712345676 <span class="pull-right badge bg-aqua">5</span></a></li>
+                            <li><a>Plate No: HS-7654 <span class="pull-right badge bg-green">12</span></a></li>
+                            <li><a>No of Seats: <span class="pull-right badge bg-red">842</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.widget-user -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+
+                <!-- Chat box -->
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <i class="fa fa-comments-o"></i>
+
+                        <h3 class="box-title">Feedback</h3>
+
+                        <div class="box-tools pull-right" data-toggle="tooltip" title="Status">
+                            <div class="btn-group" data-toggle="btn-toggle">
+                                <button type="button" class="btn btn-default btn-sm active"><i
+                                        class="fa fa-square text-green"></i>
+                                </button>
+                                <button type="button" class="btn btn-default btn-sm"><i
+                                        class="fa fa-square text-red"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body chat" id="chat-box">
+                        <!-- chat item -->
+                        <div class="item">
+                            <img src="dist/img/user4-128x128.jpg" alt="user image" class="online">
+
+                            <p class="message">
+                                <a href="#" class="name">
+                                    <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
+                                    Mike Doe
+                                </a>
+                                I would like to meet you to discuss the latest news about
+                                the arrival of the new theme. They say it is going to be one the
+                                best themes on the market
+                            </p>
+                        </div>
+                        <!-- /.item -->
+                        <!-- chat item -->
+                        <div class="item">
+                            <img src="dist/img/user3-128x128.jpg" alt="user image" class="offline">
+
+                            <p class="message">
+                                <a href="#" class="name">
+                                    <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>
+                                    Alexander Pierce
+                                </a>
+                                I would like to meet you to discuss the latest news about
+                                the arrival of the new theme. They say it is going to be one the
+                                best themes on the market
+                            </p>
+                        </div>
+                        <!-- /.item -->
+                        <!-- chat item -->
+                        <div class="item">
+                            <img src="dist/img/user2-160x160.jpg" alt="user image" class="offline">
+
+                            <p class="message">
+                                <a href="#" class="name">
+                                    <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
+                                    Susan Doe
+                                </a>
+                                I would like to meet you to discuss the latest news about
+                                the arrival of the new theme. They say it is going to be one the
+                                best themes on the market
+                            </p>
+                        </div>
+                        <!-- /.item -->
+                    </div>
+                    <!-- /.chat -->
+                    <div class="box-footer">
+                        <div class="input-group">
+                            <input class="form-control" placeholder="Type message...">
+
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-success"><i class="fa fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.box (chat box) -->
+            </div>
+            <div class="col-md-6">
+                {{> Template.dynamic template=map_element}}
+            </div>
+        </div>
+
     </section>
 </template>
