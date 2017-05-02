@@ -1,5 +1,5 @@
-Template.map2.helpers({
-    exampleMap2Options: function () {
+Template.map3.helpers({
+    exampleMap3Options: function () {
         // Make sure the maps API has loaded
         if (GoogleMaps.loaded()) {
             // Map initialization options
@@ -11,10 +11,10 @@ Template.map2.helpers({
     }
 });
 
-Template.map2.onCreated(function () {
+Template.map3.onCreated(function () {
     // We can use the `ready` callback to interact with the map API once the map is ready.
-    GoogleMaps.ready('exampleMap2', function (map2) {
-        var map = map2.instance;
+    GoogleMaps.ready('exampleMap3', function (map3) {
+        var map = map3.instance;
         var bounds = new google.maps.LatLngBounds(
             new google.maps.LatLng(9.223031, 79.464111),
             new google.maps.LatLng(7.647298, 81.650391),
@@ -23,7 +23,7 @@ Template.map2.onCreated(function () {
 
 
         // Create the search box and link it to the UI element.
-        var input = document.getElementById('pac-input-2');
+        var input = document.getElementById('pac-input-3');
         var searchBox = new google.maps.places.SearchBox(input, {bounds: bounds});
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 

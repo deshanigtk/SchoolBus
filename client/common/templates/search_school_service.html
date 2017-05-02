@@ -1,5 +1,12 @@
 <template name="search_school_service">
-    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-    {{> Template.dynamic template=map_element}}
+    {{> nav_bar}}
+    <div class="row">
+        <div class="col-md-6">
+            {{> Template.dynamic template=map_element_1}}
+        </div>
+        <div class="col-md-6">
+            {{> Template.dynamic template=map_element_2}}
+        </div>
+    </div>
 </template>
 
