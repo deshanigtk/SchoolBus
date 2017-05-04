@@ -3,10 +3,14 @@ Template.register_driver.events({
         event.preventDefault();
 
         $('#submit').attr('disabled', true);
-        const driverFirstName = event.target.driverFirstName.value;
-        const driverLastName = event.target.driverLastName.value;
-        const driverContactNo = event.target.driverContactNo.value;
-        const driverEmail = event.target.driverEmail.value;
+
+        let driver = {};
+
+        driver.driverFirstName = event.target.driverFirstName.value;
+        driver.driverLastName = event.target.driverLastName.value;
+        driver.driverContactNo = event.target.driverContactNo.value;
+        driver.driverEmail = event.target.driverEmail.value;
+        let vehicleType;
 
         if (event.target.optionsRadios1.checked) {
             vehicleType = "Van";
@@ -15,12 +19,14 @@ Template.register_driver.events({
             vehicleType = "Bus";
         }
 
-        const seatCount = event.target.seatCount.value;
-        const plateNo = event.target.plateNo.value;
+        driver.vehicleType = vehicleType;
 
-        Meteor.call('create_driver', driverFirstName, driverLastName, driverContactNo, driverEmail, vehicleType, seatCount, plateNo, function (error) {
+        driver.seatCount = event.target.seatCount.value;
+        driver.plateNo = event.target.plateNo.value;
+
+        Meteor.call('create_driver',driver, function (error) {
             if (error !== undefined) {
-                console.log(error);
+                alert(error.reason);
             } else {
                 $('#submit').removeAttr("disabled");
                 window.location.href = Meteor.absoluteUrl("register-driver");

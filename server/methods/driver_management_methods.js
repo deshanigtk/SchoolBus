@@ -8,7 +8,6 @@ Meteor.methods({
                 first_name: driver.driverFirstName,
                 last_name: driver.driverLastName,
                 contact_no: driver.driverContactNo,
-                email_address: driver.driverEmail,
                 vehicle_type: driver.vehicleType,
                 seat_count: driver.seatCount,
                 plate_no: driver.plateNo
