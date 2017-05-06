@@ -1,26 +1,26 @@
-LocationSchema = new SimpleSchema({
-    "type":{
-        type: String,
-        allowedValues: ["Point"]
-    },
-    "coordinates":{
-        type: Array,
-        minCount: 2,
-        maxCount: 2
-    },
-    "coordinates.$":{
-        type: Number,
+GeocoordsSchema = new SimpleSchema({
+    lng: {
+        type : Number,
         decimal: true,
-        custom: function(){
-            if(!(-90 <= this.value[0] <= 90))
-                return "lonOutOfRange" ;
-            if(!(-180 <= this.value[1] <= 180))
-                return "latOutOfRange" ;
-        }
+        min: -180,
+        max: 180
+    },
+    lat: {
+        type : Number,
+        decimal: true,
+        min: -90,
+        max: 90
+    }
+});
 
+LocationSchema = new SimpleSchema({
+    type : {
+        type : String,
+        autoValue: function() {
+            return "Point";
+        }
     },
-    "name": {
-        type: String,
-        optional: true
-    },
+    coordinate: {
+        type: GeocoordsSchema
+    }
 });

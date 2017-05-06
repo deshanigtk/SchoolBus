@@ -1,7 +1,20 @@
-Template.location1.onCreated(function () {
+Template.way_point1.helpers({
+    wayPointMap1Options: function () {
+        // Make sure the maps API has loaded
+        if (GoogleMaps.loaded()) {
+            // Map initialization options
+            return {
+                center: new google.maps.LatLng(6.927079, 79.861244),
+                zoom: 13
+            };
+        }
+    }
+});
+
+Template.way_point1.onCreated(function () {
     // We can use the `ready` callback to interact with the map API once the map is ready.
-    GoogleMaps.ready('exampleMap2', function (map2) {
-        var map = map2.instance;
+    GoogleMaps.ready('wayPointMap1', function (way_point1) {
+        var map = way_point1.instance;
         var bounds = new google.maps.LatLngBounds(
             new google.maps.LatLng(9.223031, 79.464111),
             new google.maps.LatLng(9.818953, 80.211182),
@@ -10,7 +23,7 @@ Template.location1.onCreated(function () {
 
 
         // Create the search box and link it to the UI element.
-        var input = document.getElementById('pac-input-2');
+        var input = document.getElementById('pac-input-w1');
         var searchBox = new google.maps.places.SearchBox(input);
         searchBox.setBounds(bounds);
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
@@ -65,6 +78,9 @@ Template.location1.onCreated(function () {
                 } else {
                     bounds.extend(place.geometry.location);
                 }
+
+                document.getElementById("lat1").value = place.geometry.location.lat();
+                document.getElementById("lng1").value = place.geometry.location.lng();
             });
             map.fitBounds(bounds);
         });

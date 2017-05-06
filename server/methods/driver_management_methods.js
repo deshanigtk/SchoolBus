@@ -1,20 +1,27 @@
 Meteor.methods({
-    create_driver: function (driver) {
+    create_school_service: function (driver, school_service) {
 
-        const user_id = Accounts.createUser({
+        const driver_id = Accounts.createUser({
             email: driver.driverEmail,
 
             profile: {
                 first_name: driver.driverFirstName,
                 last_name: driver.driverLastName,
-                contact_no: driver.driverContactNo,
-                vehicle_type: driver.vehicleType,
-                seat_count: driver.seatCount,
-                plate_no: driver.plateNo
+                contact_no: driver.driverContactNo
             }
         });
+        Roles.addUsersToRoles(driver_id, ['driver', 'active']);
+        Accounts.sendEnrollmentEmail(driver_id);
 
-        Roles.addUsersToRoles(user_id, ['driver', 'active']);
-        Accounts.sendEnrollmentEmail(user_id);
+        const school_service_id = SchoolServices.insert({
+            driver_id: driver_id,
+            vehicle_type: school_service.vehicleType,
+            seat_count: school_service.seatCount,
+            plate_no: school_service.plateNo,
+            way_points: school_service.wayPoints,
+            schools:school_service.schools
+        })
     }
+
 });
+

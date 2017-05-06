@@ -1,3 +1,7 @@
+Template.register_driver.onRendered(function () {
+    GoogleMaps.load({key: 'AIzaSyDz4OqXSPfYD-AvW1SopPLMBoW9n1c90Qg', libraries: 'places'});
+});
+
 Template.register_driver.events({
     'submit form': function (event) {
         event.preventDefault();
@@ -5,12 +9,14 @@ Template.register_driver.events({
         $('#submit').attr('disabled', true);
 
         let driver = {};
+        let school_service={};
+        let vehicleType;
 
         driver.driverFirstName = event.target.driverFirstName.value;
         driver.driverLastName = event.target.driverLastName.value;
         driver.driverContactNo = event.target.driverContactNo.value;
         driver.driverEmail = event.target.driverEmail.value;
-        let vehicleType;
+
 
         if (event.target.optionsRadios1.checked) {
             vehicleType = "Van";
@@ -19,14 +25,19 @@ Template.register_driver.events({
             vehicleType = "Bus";
         }
 
-        driver.vehicleType = vehicleType;
+        school_service.vehicleType = vehicleType;
 
-        driver.seatCount = event.target.seatCount.value;
-        driver.plateNo = event.target.plateNo.value;
+        school_service.seatCount = event.target.seatCount.value;
+        school_service.plateNo = event.target.plateNo.value;
 
-        Meteor.call('create_driver',driver, function (error) {
+        school_service.wayPoints=[{coordinate:{lat:document.getElementById("lat1").value,lng:document.getElementById("lng1").value}},{coordinate:{lat:2.1424,lng:7.58}}];
+        school_service.schools=[{coordinate:{lat:document.getElementById("lat2").value,lng:document.getElementById("lng2").value}},{coordinate:{lat:2.1424,lng:7.58}}];
+
+
+        Meteor.call('create_school_service', driver,school_service, function (error) {
             if (error !== undefined) {
                 alert(error.reason);
+                $('#submit').removeAttr("disabled");
             } else {
                 $('#submit').removeAttr("disabled");
                 window.location.href = Meteor.absoluteUrl("register-driver");
@@ -37,12 +48,17 @@ Template.register_driver.events({
 Template.register_driver.onCreated(function () {
     const self = this;
     self.autorun(function () {
+        self.subscribe('school_services');
+    });
+    self.autorun(function () {
         self.subscribe('users');
     });
 });
 
 Template.register_driver.helpers({
     users: () => {
-        return Meteor.users.find({});
+        return Meteor.users.find({roles:["driver","active"]});
     }
 });
+
+
