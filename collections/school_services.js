@@ -44,6 +44,10 @@ SchoolServicesSchema = new SimpleSchema({
         type: Number,
         label: "Seat Count"
     },
+    image:{
+        type: String,
+        label: "School Service Image"
+    },
     way_points: {
         type: [LocationSchema],
         label: "Way Points"
@@ -56,11 +60,7 @@ SchoolServicesSchema = new SimpleSchema({
         type: [String],
         label: "parent_ids",
         optional: true
-    },
+    }
 });
 
 SchoolServices.attachSchema(SchoolServicesSchema);
-
-// SchoolServices.insert(
-//     {driver_id:7789,vehicle_type:"Bus",plate_no:"oiuyt",seat_count:45, way_points:[{coordinate:{lat:2.24,lng:2.58}},{coordinate:{lat:2.1424,lng:7.58}}]}
-// );

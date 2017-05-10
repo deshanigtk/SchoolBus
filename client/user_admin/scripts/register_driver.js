@@ -12,6 +12,7 @@ Template.register_driver.events({
         let school_service={};
         let vehicleType;
 
+        driver.driverNic=event.target.driverNic.value;
         driver.driverFirstName = event.target.driverFirstName.value;
         driver.driverLastName = event.target.driverLastName.value;
         driver.driverContactNo = event.target.driverContactNo.value;
@@ -33,16 +34,27 @@ Template.register_driver.events({
         school_service.wayPoints=[{coordinate:{lat:document.getElementById("lat1").value,lng:document.getElementById("lng1").value}},{coordinate:{lat:2.1424,lng:7.58}}];
         school_service.schools=[{coordinate:{lat:document.getElementById("lat2").value,lng:document.getElementById("lng2").value}},{coordinate:{lat:2.1424,lng:7.58}}];
 
+        const driverImageVar = document.getElementById('driverImage').files[0];
+        const schoolServiceImageVar=document.getElementById('schoolServiceImage').files[0];
 
-        Meteor.call('create_school_service', driver,school_service, function (error) {
-            if (error !== undefined) {
-                alert(error.reason);
-                $('#submit').removeAttr("disabled");
-            } else {
-                $('#submit').removeAttr("disabled");
-                window.location.href = Meteor.absoluteUrl("register-driver");
-            }
-        });
+        const reader = new FileReader();
+
+        reader.onload = function (event) {
+
+            driver.driverImageVar = reader.result;
+            school_service.schoolServiceImageVar=reader.result;
+
+            Meteor.call('create_school_service', driver,school_service, function (error) {
+                if (error !== undefined) {
+                    alert(error.reason);
+                } else {
+                    window.location.href = Meteor.absoluteUrl("register-driver");
+                } $('#submit').removeAttr("disabled");
+            });
+        };
+
+        reader.readAsDataURL(driverImageVar);
+        reader.readAsDataURL(schoolServiceImageVar);
     }
 });
 Template.register_driver.onCreated(function () {

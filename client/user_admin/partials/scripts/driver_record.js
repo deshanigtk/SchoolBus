@@ -1,6 +1,9 @@
 Template.driver_record.helpers({
     isUserActive: function (userId) {
         return Roles.userIsInRole(userId, 'active');
+    },
+    school_service: function () {
+        return SchoolServices.findOne({driver_id:Template.instance().data._id});
     }
 });
 

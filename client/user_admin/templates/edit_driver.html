@@ -1,13 +1,13 @@
-<template name="register_driver">
+<template name="edit_driver">
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Register Drivers
-            <small>Enter driver details and school service details</small>
+            Driver Profile
+            <small>Edit driver details and save changes</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li class="active">Register Drivers</li>
+            <li class="active">Driver Profile</li>
         </ol>
     </section>
 
@@ -21,7 +21,7 @@
                 <!-- general form elements -->
                 <div class="box box-primary">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Enter Driver Details</h3>
+                        <h3 class="box-title">Driver Details</h3>
                     </div>
                     <!-- /.box-header -->
                     <!-- form start -->
@@ -36,11 +36,6 @@
                                 <label for="driverLastName">Last Name</label>
                                 <input type="text" class="form-control" id="driverLastName"
                                        placeholder="Enter driver's last name" name="driverLastName" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="driverNic">NIC</label>
-                                <input type="text" class="form-control" id="driverNic"
-                                       placeholder="Enter driver's NIC" name="driverNic" required>
                             </div>
                             <div class="form-group">
                                 <label for="driverContactNo">Contact Number</label>
@@ -59,7 +54,7 @@
                                 <p class="help-block">Upload driver image.</p>
                             </div>
                             <div class="box-header with-border">
-                                <h3 class="box-title">Enter School Service Details</h3>
+                                <h3 class="box-title">School Service Details</h3>
                             </div>
                             <div class="form-group">
                                 <label>Vehicle Type</label>
@@ -114,7 +109,7 @@
                         <div class="box-footer">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <button id="submit" type="submit" class="btn btn-primary btn-block">Create</button>
+                                    <button id="submit" type="submit" class="btn btn-primary btn-block">Save Changes</button>
                                 </div>
                             </div>
                         </div>

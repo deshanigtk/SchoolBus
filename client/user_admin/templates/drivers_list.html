@@ -1,9 +1,9 @@
-<template name="driver_list">
+<template name="drivers_list">
 
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Driver List
+            Drivers List
             <small>Registered drivers and school services details</small>
         </h1>
         <ol class="breadcrumb">
@@ -16,7 +16,7 @@
     <section class="content">
         <!-- Your Page Content Here -->
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-10">
                 <div class="box">
                     <div class="box-header">
                         <h3 class="box-title">Registered Users</h3>
@@ -27,24 +27,28 @@
                             <table class="table table-bordered table-striped table-hover">
                                 <thead>
                                 <tr>
+                                    <th>NIC</th>
                                     <th>Driver Name</th>
                                     <th>Contact No</th>
                                     <th>Email</th>
                                     <th>Vehicle Plate No</th>
+                                    <th>Vehicle Type</th>
+                                    <th>Status</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-
                                 {{#each users}}
-                                    {{>driver_record}}
+                                    {{> driver_record}}
                                 {{/each}}
-
                                 </tbody>
                                 <tfoot>
                                 <tr>
-                                    <th>Pharmacy Name</th>
-                                    <th>Pharmacist's Name</th>
+                                    <th>NIC</th>
+                                    <th>Driver Name</th>
                                     <th>Contact No</th>
+                                    <th>Email</th>
+                                    <th>Vehicle Plate No</th>
+                                    <th>Vehicle Type</th>
                                     <th>Status</th>
                                 </tr>
                                 </tfoot>
@@ -64,5 +68,4 @@
         <!-- /.row -->
     </section>
     <!-- /.content -->
-
 </template>
