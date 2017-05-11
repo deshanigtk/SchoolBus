@@ -16,7 +16,7 @@
     <section class="content">
         <!-- Your Page Content Here -->
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-10">
                 <div class="row">
                     <div class="box">
                         <div class="box-header">
@@ -32,11 +32,15 @@
                                         <th>Contact No</th>
                                         <th>Nic</th>
                                         <th>Email</th>
+                                        <th></th>
+                                        <th></th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    {{#each user.related_parents}}
-                                        {{> parent_record}}
+                                    {{#each related_parents}}
+                                        {{#if isRequestedParent status}}
+                                            {{> parent_record}}
+                                        {{/if}}
                                     {{/each}}
                                     </tbody>
                                 </table>
@@ -66,11 +70,14 @@
                                         <th>Contact No</th>
                                         <th>Nic</th>
                                         <th>Email</th>
+                                        <th></th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    {{#each user.related_parents}}
-                                        {{> parent_record}}
+                                    {{#each related_parents}}
+                                        {{#if isAcceptedParent status}}
+                                            {{> parent_record}}
+                                        {{/if}}
                                     {{/each}}
                                     </tbody>
                                 </table>
@@ -84,9 +91,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                {{>Template.dynamic template=parent_profile}}
-            </div>
+            <!--<div class="col-md-6">-->
+            <!--{{>Template.dynamic template= parent_profile data=user_id}}-->
+            <!--</div>-->
         </div>
     </section>
 </template>

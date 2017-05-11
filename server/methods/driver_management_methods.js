@@ -39,7 +39,16 @@ Meteor.methods({
                     }
                 }
             });
-    }
+    },
+    accept_parent: function (school_service_id, parent_id, status) {
+        SchoolServices.update({
+                _id: school_service_id, "related_parents.parent_id": parent_id
+            },
+            {
+                $set: {"related_parents.$.status": status}
+
+            });
+    },
 
 });
 

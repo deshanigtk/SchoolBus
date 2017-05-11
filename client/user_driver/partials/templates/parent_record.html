@@ -1,8 +1,21 @@
 <template name="parent_record">
     <tr id="single_parent_record">
-        <td>{{profile.first_name}} {{profile.last_name}}</td>
-        <td>{{profile.contact_no}}</td>
-        <td>{{profile.nic}}</td>
-        <td>{{emails.[0]}}</td>
+        <td>{{parent.profile.first_name}} {{parent.profile.last_name}}</td>
+        <td>{{parent.profile.contact}}</td>
+        <td>{{parent.profile.nic}}</td>
+        <td>{{parent.emails.[0].address}}</td>
+        {{#if isRequestedParent}}
+            <td>
+                <button class="Button" name="accept" id="accept">ACCEPT</button>
+            </td>
+            <td>
+                <button class="Button" name="reject" id="reject">REJECT</button>
+            </td>
+        {{/if}}
+        {{#if isAcceptedParent}}
+            <td>
+                <button class="Button" name="viewPayment" id="viewPayment">VIEW PAYMENT</button>
+            </td>
+        {{/if}}
     </tr>
 </template>

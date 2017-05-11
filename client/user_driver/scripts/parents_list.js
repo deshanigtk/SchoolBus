@@ -7,12 +7,24 @@ Template.parents_list.onCreated(function () {
 });
 
 Template.parents_list.helpers({
-    user: () => {
-        return Meteor.users.findOne({_id:Meteor.userId()});
+    related_parents: () => {
+        const school_service = SchoolServices.findOne({driver_id: Meteor.userId()});
+        return school_service.related_parents;
     },
-    school_service: () => {
-        return SchoolServices.findOne({driver_id:Meteor.userId()});
-    }
+    isRequestedParent: function (status) {
+        return (status === "Pending");
+    },
+
+    isAcceptedParent: function (status) {
+        return (status === "Accepted");
+    },
+
+    // accepted_parents: () => {
+    //     return Meteor.users.find({_id:Meteor.userId(),related_parents:{status:"Accepted"}});
+    // },
+    // school_service: () => {
+    //     return SchoolServices.findOne({driver_id:Meteor.userId()});
+    // }
 });
 
 Template.parents_list.onRendered(function () {
