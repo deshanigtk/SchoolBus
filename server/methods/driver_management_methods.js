@@ -5,7 +5,7 @@ Meteor.methods({
             email: driver.driverEmail,
 
             profile: {
-                nic:driver.driverNic,
+                nic: driver.driverNic,
                 first_name: driver.driverFirstName,
                 last_name: driver.driverLastName,
                 contact_no: driver.driverContactNo,
@@ -21,12 +21,24 @@ Meteor.methods({
             seat_count: school_service.seatCount,
             plate_no: school_service.plateNo,
             way_points: school_service.wayPoints,
-            schools:school_service.schools,
-            image:school_service.schoolServiceImageVar
+            schools: school_service.schools,
+            image: school_service.schoolServiceImageVar
         })
     },
-    update_school_service:function (school_service_id, parent_id) {
-        SchoolServices.update({_id:school_service_id},{$addToSet:{parent_ids:parent_id}});
+    send_request: function (school_service_id, parent) {
+        SchoolServices.update({
+                _id: school_service_id
+            },
+            {
+                $addToSet: {
+                    related_parents: {
+                        parent_id: parent.parent_id,
+                        status: parent.status,
+                        start_location: parent.start_location,
+                        end_location: parent.end_location
+                    }
+                }
+            });
     }
 
 });

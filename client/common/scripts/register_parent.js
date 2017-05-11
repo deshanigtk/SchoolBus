@@ -23,25 +23,26 @@ Template.register_parent.events({
                     last_name: lastNameVal,
                     nic: nicVal,
                     contact: contactVal,
-                }
+                },
+                driver_ids: [String]
             });
 
             Roles.addUsersToRoles(user_id, ['parent', 'active']);
             Accounts.sendEnrollmentEmail(user_id);
 
             $('#helper_text').html('You have successfully registered to the system');
-            event.target.firstName.value="";
-            event.target.lastName.value="";
-            event.target.parentNic.value="";
-            event.target.parentContact.value="";
-            event.target.parentEmail.value="";
-            event.target.parentPassword.value="";
-            event.target.rePassword.value="";
+            event.target.firstName.value = "";
+            event.target.lastName.value = "";
+            event.target.parentNic.value = "";
+            event.target.parentContact.value = "";
+            event.target.parentEmail.value = "";
+            event.target.parentPassword.value = "";
+            event.target.rePassword.value = "";
         }
-        else{
+        else {
             $('#helper_text').html('Entered passwords are not matching!');
-            event.target.parentPassword.value="";
-            event.target.rePassword.value="";
+            event.target.parentPassword.value = "";
+            event.target.rePassword.value = "";
 
             $('#submit').removeAttr("disabled");
 

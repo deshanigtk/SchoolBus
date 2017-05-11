@@ -1,92 +1,92 @@
 <template name="parents_list">
-    <div class="row">
 
-        <div class="col-md-6">
-            <div class="box">
-                <div class="box-header">
-                    <h3 class="box-title">Parents Request List</h3>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body">
-                    <table id="parentListTable" class="table table-bordered table-hover">
-                        <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Contact No</th>
-                        </tr>
-                        </thead>
-                        <tbody>
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Parents List
+            <small>Registered parents and parent requests details</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="active">Parents List</li>
+        </ol>
+    </section>
 
-                        <tr>
-                            <td>Chandi Prabodhini</td>
-                            <td>0712697439</td>
-                        </tr>
-                        <tr>
-                            <td>Malaka Jayasinghe</td>
-                            <td>0779648315</td>
-                        </tr>
-                        </tbody>
-                    </table>
+    <!-- Main content -->
+    <section class="content">
+        <!-- Your Page Content Here -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">Parent Requests</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body" style="overflow-x: auto">
+                            {{#if Template.subscriptionsReady}}
+                                <table class="table table-bordered table-striped table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Contact No</th>
+                                        <th>Nic</th>
+                                        <th>Email</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {{#each user.related_parents}}
+                                        {{> parent_record}}
+                                    {{/each}}
+                                    </tbody>
+                                </table>
+                            {{else}}
+                                <div style="width: 100px; margin: 0 auto">
+                                    <div class="loader-small"></div>
+                                </div>
+                            {{/if}}
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                    <!-- /.col -->
                 </div>
-                <!-- /.box-body -->
+                <div class="row">
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">Registered Parents</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body" style="overflow-x: auto">
+                            {{#if Template.subscriptionsReady}}
+                                <table class="table table-bordered table-striped table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Contact No</th>
+                                        <th>Nic</th>
+                                        <th>Email</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {{#each user.related_parents}}
+                                        {{> parent_record}}
+                                    {{/each}}
+                                    </tbody>
+                                </table>
+                            {{else}}
+                                <div style="width: 100px; margin: 0 auto">
+                                    <div class="loader-small"></div>
+                                </div>
+                            {{/if}}
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                {{>Template.dynamic template=parent_profile}}
             </div>
         </div>
-    </div>
-    <div class="row">
-
-        <div class="col-md-6">
-            <div class="box">
-                <div class="box-header">
-                    <h3 class="box-title">Parents List</h3>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body">
-                    <table id="parentListTable" class="table table-bordered table-hover">
-                        <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Contact No</th>
-                            <th>Email Address</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Deshani Geethika</td>
-                            <td>0712547896</td>
-                            <td>deshani@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Thejani Chathurangika</td>
-                            <td>0772634896</td>
-                            <td>thejanichathu@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Senani Chathurika</td>
-                            <td>07778964896</td>
-                            <td>senanipd@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Chandi Prabodhini</td>
-                            <td>0712697439</td>
-                            <td>chandi@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Malaka Jayasinghe</td>
-                            <td>0779648315</td>
-                            <td>malakaj@gmail.com</td>
-                        </tr>
-                        </tbody>
-                        <tfoot>
-                        <tr>
-                            <th>Name</th>
-                            <th>Contact No</th>
-                            <th>Email Address</th>
-                        </tr>
-                        </tfoot>
-                    </table>
-                </div>
-                <!-- /.box-body -->
-            </div>
-        </div>
-    </div>
+    </section>
 </template>

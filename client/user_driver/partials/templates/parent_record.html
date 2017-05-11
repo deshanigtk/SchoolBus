@@ -1,16 +1,8 @@
 <template name="parent_record">
     <tr id="single_parent_record">
-        <!--<td>{{profile.first}}</td>-->
-        <!--<td>{{profile.pharmacist_name}}</td>-->
-        <!--<td>{{profile.contact_no}}</td>-->
-        <!--<td>-->
-
-            <!--{{#if isUserActive _id}}-->
-                <!--<span class="badge bg-green">ACTIVE</span>-->
-            <!--{{else}}-->
-                <!--<span class="badge bg-red">INACTIVE</span>-->
-            <!--{{/if}}-->
-
-        <!--</td>-->
+        <td>{{profile.first_name}} {{profile.last_name}}</td>
+        <td>{{profile.contact_no}}</td>
+        <td>{{profile.nic}}</td>
+        <td>{{emails.[0]}}</td>
     </tr>
 </template>
