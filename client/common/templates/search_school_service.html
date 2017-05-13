@@ -20,7 +20,9 @@
             <div class="col-md-6">
             </div>
             <div class="col-md-6">
-                <button type="button" class="btn-lg btn-primary col-md-4" style="float: right">FIND</button>
+                <button type="button" id="find_button" name="find_button" class="btn-lg btn-primary col-md-4"
+                        style="float: right">FIND
+                </button>
             </div>
         </div>
     </div>
@@ -30,8 +32,9 @@
             <h2>SEARCH RESULTS</h2>
 
             <p>Follow the steps to continue to payment.</p>
-            <button type="button" class="btn btn-primary">VIEW PROFILE</button>
-
+            {{#each search_results}}
+                {{> search_result}}
+            {{/each}}
         </div>
     </div>
 </template>

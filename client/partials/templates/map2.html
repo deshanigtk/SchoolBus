@@ -1,6 +1,8 @@
 <template name="map2">
     <div class="map-container">
+        <input type="hidden" id="start_lat">
+        <input type="hidden" id="start_lng">
         <input id="pac-input-2" class="pac-input controls" type="text" placeholder="Search Box">
-        {{> googleMap name="exampleMap2" options=exampleMap2Options}}
+        {{> googleMap name="startLocationMap" options=startLocationMapOptions}}
     </div>
 </template>

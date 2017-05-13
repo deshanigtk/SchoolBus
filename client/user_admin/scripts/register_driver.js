@@ -35,14 +35,14 @@ Template.register_driver.events({
         school_service.schools=[{coordinate:{lat:document.getElementById("lat2").value,lng:document.getElementById("lng2").value}},{coordinate:{lat:2.1424,lng:7.58}}];
 
         const driverImageVar = document.getElementById('driverImage').files[0];
-        const schoolServiceImageVar=document.getElementById('schoolServiceImage').files[0];
+        // const schoolServiceImageVar=document.getElementById('schoolServiceImage').files[0];
 
         const reader = new FileReader();
 
         reader.onload = function (event) {
 
             driver.driverImageVar = reader.result;
-            school_service.schoolServiceImageVar=reader.result;
+            // school_service.schoolServiceImageVar=reader.result;
 
             Meteor.call('create_school_service', driver,school_service, function (error) {
                 if (error !== undefined) {
@@ -54,7 +54,7 @@ Template.register_driver.events({
         };
 
         reader.readAsDataURL(driverImageVar);
-        reader.readAsDataURL(schoolServiceImageVar);
+        // reader.readAsDataURL(schoolServiceImageVar);
     }
 });
 Template.register_driver.onCreated(function () {

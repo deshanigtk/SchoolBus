@@ -1,5 +1,5 @@
 Template.map3.helpers({
-    exampleMap3Options: function () {
+    schoolLocationMapOptions: function () {
         // Make sure the maps API has loaded
         if (GoogleMaps.loaded()) {
             // Map initialization options
@@ -13,7 +13,7 @@ Template.map3.helpers({
 
 Template.map3.onCreated(function () {
     // We can use the `ready` callback to interact with the map API once the map is ready.
-    GoogleMaps.ready('exampleMap3', function (map3) {
+    GoogleMaps.ready('schoolLocationMap', function (map3) {
         var map = map3.instance;
         var bounds = new google.maps.LatLngBounds(
             new google.maps.LatLng(9.223031, 79.464111),
@@ -77,6 +77,8 @@ Template.map3.onCreated(function () {
                 } else {
                     bounds.extend(place.geometry.location);
                 }
+                document.getElementById("school_lat").value = place.geometry.location.lat();
+                document.getElementById("school_lng").value = place.geometry.location.lng();
             });
             map.fitBounds(bounds);
         });

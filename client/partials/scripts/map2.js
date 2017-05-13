@@ -1,5 +1,5 @@
 Template.map2.helpers({
-    exampleMap2Options: function () {
+    startLocationMapOptions: function () {
         // Make sure the maps API has loaded
         if (GoogleMaps.loaded()) {
             // Map initialization options
@@ -13,7 +13,7 @@ Template.map2.helpers({
 
 Template.map2.onCreated(function () {
     // We can use the `ready` callback to interact with the map API once the map is ready.
-    GoogleMaps.ready('exampleMap2', function (map2) {
+    GoogleMaps.ready('startLocationMap', function (map2) {
         var map = map2.instance;
         var bounds = new google.maps.LatLngBounds();
 
@@ -72,6 +72,8 @@ Template.map2.onCreated(function () {
                 } else {
                     bounds.extend(place.geometry.location);
                 }
+                document.getElementById("start_lat").value = place.geometry.location.lat();
+                document.getElementById("start_lng").value = place.geometry.location.lng();
             });
             map.fitBounds(bounds);
         });

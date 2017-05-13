@@ -70,10 +70,10 @@ SchoolServicesSchema = new SimpleSchema({
         type: Number,
         label: "Seat Count"
     },
-    image: {
-        type: String,
-        label: "School Service Image"
-    },
+    // image: {
+    //     type: String,
+    //     label: "School Service Image"
+    // },
     way_points: {
         type: [LocationSchema],
         label: "Way Points"

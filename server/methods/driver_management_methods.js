@@ -22,8 +22,8 @@ Meteor.methods({
             plate_no: school_service.plateNo,
             way_points: school_service.wayPoints,
             schools: school_service.schools,
-            image: school_service.schoolServiceImageVar
-        })
+            // image: school_service.schoolServiceImageVar
+        });
     },
     send_request: function (school_service_id, parent) {
         SchoolServices.update({
