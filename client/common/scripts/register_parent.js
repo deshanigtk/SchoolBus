@@ -24,7 +24,7 @@ Template.register_parent.events({
                     nic: nicVal,
                     contact: contactVal,
                 },
-                driver_ids: [String]
+                driver_ids:[String]
             });
 
             Roles.addUsersToRoles(user_id, ['parent', 'active']);

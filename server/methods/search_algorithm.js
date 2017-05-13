@@ -27,7 +27,7 @@ Meteor.methods({
 
         var sortable = [];
         for (var obj in distanceObj) {
-            if (distanceObj[obj] < 1000) {
+            if (distanceObj[obj] < 200000) {
                 sortable.push([obj, distanceObj[obj]]);
             }
         }

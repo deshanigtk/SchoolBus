@@ -24,18 +24,28 @@ Template.search_school_service.events({
 
         Meteor.call('search_school_service', parseFloat(start_lat), parseFloat(start_lng), parseFloat(school_lat), parseFloat(school_lng), function (error, result) {
             template.results.set("suggested_list", result);
-            console.log(result);
         });
     }
 });
 
 Template.search_school_service.helpers({
     search_results: () => {
-        console.log(Template.instance().results.get("suggested_list"));
-        if (Template.instance().results.get('suggested_list')) {
-            return SchoolServices.find({_id: {$in: Template.instance().results.get('suggested_list')}});
+        if (Template.instance().results.get("suggested_list")) {
+            return SchoolServices.find({_id: {$in: Template.instance().results.get("suggested_list")}});
         }
         return null;
+    },
+    start_lat: () => {
+        return document.getElementById("start_lat").value;
+    },
+    start_lng: () => {
+        return document.getElementById("start_lng").value;
+    },
+    school_lat: () => {
+        return document.getElementById("school_lat").value;
+    },
+    school_lng: () => {
+        return document.getElementById("school_lng").value;
     }
 })
 ;

@@ -1,12 +1,12 @@
-<template name="search_result">
+<template name="related_driver">
     <div id="single_search_result">
-        <div class="col-lg-3 col-xs-6">
+        <div class="col-lg-5 col-xs-6">
             <!-- small box -->
             <div class="small-box bg-aqua">
                 <div class="inner">
-                    <h3>{{driver.profile.first_name}}</h3>
+                    <h3>{{driver.profile.first_name}} {{driver.profile.last_name}}</h3>
 
-                    <p> PLATE NO: {{school_service.plate_no}}</p>
+                    <p> PLATE NO: {{driver.profile.contact_no}}</p>
                     <img src="{{driver.profile.image}}" class="img-circle" width="100px" height="100px">
                 </div>
 

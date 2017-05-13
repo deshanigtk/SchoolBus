@@ -49,6 +49,12 @@ Meteor.methods({
 
             });
     },
-
+    send_feedback: function (school_service_id, parent_id, feedback) {
+        SchoolServices.update({
+            _id: school_service_id, "related_parents.parent_id": parent_id
+        }, {
+            $set: {"related_parents.$.feedback": feedback}
+        });
+    }
 });
 

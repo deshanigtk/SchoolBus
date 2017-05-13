@@ -1,0 +1,13 @@
+<template name="feedback">
+    <div class="item">
+        <img src="{{parent.profile.image}}" alt="user image" class="online">
+
+        <p class="message">
+            <a href="#" class="name">
+                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
+                {{parent.profile.first_name}} {{parent.profile.last_name}}
+            </a>
+            {{feedback}}
+        </p>
+    </div>
+</template>

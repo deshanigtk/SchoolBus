@@ -26,7 +26,7 @@ Template.sign_in.events({
                     window.location.href = Meteor.absoluteUrl('parent-dashboard')
                 }
                 if (Roles.userIsInRole(Meteor.userId(), 'driver')) {
-                    window.location.href = Meteor.absoluteUrl('driver-dashboard');
+                    window.location.href = Meteor.absoluteUrl('parents-list');
                 }
             }
         });

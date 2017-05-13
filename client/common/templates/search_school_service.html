@@ -27,13 +27,14 @@
         </div>
     </div>
     <span style="display:block; height: 20px;"></span>
-    <div class="row">
-        <div class="callout callout-info" style="height: 200px">
+
+    <div class="container">
+        <div class="row">
             <h2>SEARCH RESULTS</h2>
 
-            <p>Follow the steps to continue to payment.</p>
+            <p>Follow the steps to continue</p>
             {{#each search_results}}
-                {{> search_result}}
+                {{>search_result id=_id lat1=start_lat lng1=start_lng lat2=school_lat lng2=school_lng}}
             {{/each}}
         </div>
     </div>
