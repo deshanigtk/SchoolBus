@@ -47,7 +47,7 @@ RelatedParentsSchema = new SimpleSchema({
         optional:true
     },
     feedback: {
-        type: [String],
+        type: String,
         label: "Feedback",
         optional:true
     }
@@ -86,6 +86,11 @@ SchoolServicesSchema = new SimpleSchema({
         type: [RelatedParentsSchema],
         label: "Related Parents",
         optional: true
+    },
+    current_location:{
+        type:LocationSchema,
+        label:"Current Location",
+        optional:true
     }
 });
 

@@ -12,20 +12,33 @@ Template.register_parent.events({
         const passwordVal = event.target.parentPassword.value;
         const confirmVal = event.target.rePassword.value;
 
+
         if (passwordVal == confirmVal) {
 
-            const user_id = Accounts.createUser({
-                email: emailVal,
-                password: passwordVal,
 
-                profile: {
-                    first_name: firstNameVal,
-                    last_name: lastNameVal,
-                    nic: nicVal,
-                    contact: contactVal,
-                },
-                driver_ids:[String]
-            });
+            const parentImageVar = document.getElementById('parentImage').files[0];
+
+            const reader = new FileReader();
+
+            reader.onload = function (event) {
+
+                const user_id = Accounts.createUser({
+                    email: emailVal,
+                    password: passwordVal,
+
+                    profile: {
+                        first_name: firstNameVal,
+                        last_name: lastNameVal,
+                        nic: nicVal,
+                        contact: contactVal,
+                        image: reader.result
+                    },
+                    driver_ids: [String]
+                });
+            };
+
+            reader.readAsDataURL(parentImageVar);
+            //
 
             Roles.addUsersToRoles(user_id, ['parent', 'active']);
             Accounts.sendEnrollmentEmail(user_id);

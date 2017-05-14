@@ -8,29 +8,26 @@ Template.driver_profile.onCreated(function () {
         self.subscribe('school_services');
         self.subscribe('users');
     });
-    self.required_data = new ReactiveDict();
-
-    self.required_data.set("school_service", SchoolServices.findOne({_id: Template.instance().data.id}));
-    self.required_data.set("driver", Meteor.users.findOne({_id: SchoolServices.findOne({_id: Template.instance().data.id}).driver_id}));
-    self.required_data.set("related_parents", SchoolServices.findOne({_id: Template.instance().data.id}).related_parents);
-
 });
 
 Template.driver_profile.helpers({
 
     school_service: function () {
-        return Template.instance().data.required_data.get("school_service");
+        return SchoolServices.findOne({_id: Template.instance().data.school_service_id});
     },
     driver: () => {
-        return Template.instance().data.required_data.get("driver");
+        return Meteor.users.findOne({_id: SchoolServices.findOne({_id: Template.instance().data.school_service_id}).driver_id});
     },
     related_parents: () => {
-        return Template.instance().data.required_data.get("school_service").related_parents;
+        return SchoolServices.findOne({_id: Template.instance().data.school_service_id}).related_parents;
     },
     // isUserAccepted:()=>{
     //     if(Meteor.users.findOne({}));
     // }
 
+    followers: () => {
+        return SchoolServices.findOne({_id: Template.instance().data.school_service_id}).related_parents.length;
+    }
 });
 
 Template.driver_profile.events({
@@ -42,10 +39,10 @@ Template.driver_profile.events({
         const driver_id = document.getElementById("driver_id").value;
         const parent_id = Meteor.userId();
         const status = "Pending";
-        const start_lat = Template.instance().data.lat1;
-        const start_lng = Template.instance().data.lng1;
-        const school_lat = Template.instance().data.lat2;
-        const school_lng = Template.instance().data.lng2;
+        const start_lat = Template.instance().data.start_lat;
+        const start_lng = Template.instance().data.start_lng;
+        const school_lat = Template.instance().data.school_lat;
+        const school_lng = Template.instance().data.school_lng;
 
         parent.parent_id = parent_id;
         parent.status = status;

@@ -15,7 +15,7 @@ Template.search_result.events({
            BlazeLayout.render('master_layout', {
                content: 'driver_profile',
                side_bar_links: 'parent_side_bar_links',
-               user_data: {
+               master_data: {
                    school_service_id: Template.instance().data.id,
                    start_lat: Template.instance().data.lat1,
                    start_lng: Template.instance().data.lng1,

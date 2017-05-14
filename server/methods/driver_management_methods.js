@@ -55,6 +55,14 @@ Meteor.methods({
         }, {
             $set: {"related_parents.$.feedback": feedback}
         });
+    },
+    update_location: function (school_service_id, lat, lng) {
+        SchoolServices.update({_id: school_service_id}, {
+            $set: {
+                "current_location.coordinate.lat": lat,
+                "current_location.coordinate.lng":lng
+            }
+        });
     }
 });
 

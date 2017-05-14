@@ -42,7 +42,7 @@
                             <!-- /.col -->
                             <div class="col-sm-3 border-right">
                                 <div class="description-block">
-                                    <h5 class="description-header">13,000</h5>
+                                    <h5 class="description-header">{{followers}}</h5>
                                     <span class="description-text">FOLLOWERS</span>
                                 </div>
                                 <!-- /.description-block -->
@@ -84,17 +84,21 @@
                     <div class="box-body chat" id="chat-box">
                         <!-- chat item -->
                         {{#each related_parents}}
-                            {{> feedback}}
+                            {{#if feedback}}
+                                {{> feedback}}
+                            {{/if}}
                         {{/each}}
                     </div>
                     <!-- /.chat -->
 
                     <div class="box-footer">
                         <div class="input-group">
-                            <input class="form-control" placeholder="Type message..." id="feedback_content" name="feedback_content">
+                            <input class="form-control" placeholder="Type message..." id="feedback_content"
+                                   name="feedback_content">
 
                             <div class="input-group-btn">
-                                <button type="button" class="btn btn-success" name="add_feedback" id="add_feedback"><i class="fa fa-plus"></i></button>
+                                <button type="button" class="btn btn-success" name="add_feedback" id="add_feedback"><i
+                                        class="fa fa-plus"></i></button>
                             </div>
                         </div>
                     </div>
