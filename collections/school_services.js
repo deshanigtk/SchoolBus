@@ -23,7 +23,8 @@ LocationSchema = new SimpleSchema({
         }
     },
     coordinate: {
-        type: GeocoordsSchema
+        type: GeocoordsSchema,
+        optional:true
     }
 });
 
