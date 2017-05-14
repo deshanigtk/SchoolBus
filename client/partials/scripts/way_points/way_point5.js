@@ -78,6 +78,8 @@ Template.way_point5.onCreated(function () {
                 } else {
                     bounds.extend(place.geometry.location);
                 }
+                document.getElementById("lat5").value = place.geometry.location.lat();
+                document.getElementById("lng5").value = place.geometry.location.lng();
             });
             map.fitBounds(bounds);
         });

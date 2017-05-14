@@ -1,5 +1,5 @@
 Template.way_point2.helpers({
-    wayPointMap2Options: function () {
+    exampleMap2Options: function () {
         // Make sure the maps API has loaded
         if (GoogleMaps.loaded()) {
             // Map initialization options
@@ -13,19 +13,14 @@ Template.way_point2.helpers({
 
 Template.way_point2.onCreated(function () {
     // We can use the `ready` callback to interact with the map API once the map is ready.
-    GoogleMaps.ready('wayPointMap2', function (way_point2) {
+    GoogleMaps.ready('exampleMap2', function (way_point2) {
         var map = way_point2.instance;
-        var bounds = new google.maps.LatLngBounds(
-            new google.maps.LatLng(9.223031, 79.464111),
-            new google.maps.LatLng(9.818953, 80.211182),
-            new google.maps.LatLng(5.912756, 80.584717),
-            new google.maps.LatLng(7.647298, 81.650391));
+        var bounds = new google.maps.LatLngBounds();
 
 
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input-w2');
         var searchBox = new google.maps.places.SearchBox(input);
-        searchBox.setBounds(bounds);
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
         // Bias the SearchBox results towards current map's viewport.

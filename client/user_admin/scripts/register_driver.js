@@ -32,7 +32,7 @@ Template.register_driver.events({
         school_service.plateNo = event.target.plateNo.value;
 
         school_service.wayPoints=[{coordinate:{lat:document.getElementById("lat1").value,lng:document.getElementById("lng1").value}},{coordinate:{lat:2.1424,lng:7.58}}];
-        school_service.schools=[{coordinate:{lat:document.getElementById("lat2").value,lng:document.getElementById("lng2").value}},{coordinate:{lat:2.1424,lng:7.58}}];
+        school_service.schools=[{coordinate:{lat:document.getElementById("lat6").value,lng:document.getElementById("lng6").value}},{coordinate:{lat:2.1424,lng:7.58}}];
 
         const driverImageVar = document.getElementById('driverImage').files[0];
         // const schoolServiceImageVar=document.getElementById('schoolServiceImage').files[0];

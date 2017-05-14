@@ -15,17 +15,12 @@ Template.way_point6.onCreated(function () {
     // We can use the `ready` callback to interact with the map API once the map is ready.
     GoogleMaps.ready('wayPointMap6', function (way_point6) {
         var map = way_point6.instance;
-        var bounds = new google.maps.LatLngBounds(
-            new google.maps.LatLng(9.223031, 79.464111),
-            new google.maps.LatLng(9.818953, 80.211182),
-            new google.maps.LatLng(5.912756, 80.584717),
-            new google.maps.LatLng(7.647298, 81.650391));
+        var bounds = new google.maps.LatLngBounds();
 
 
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input-w6');
         var searchBox = new google.maps.places.SearchBox(input);
-        searchBox.setBounds(bounds);
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
         // Bias the SearchBox results towards current map's viewport.
@@ -78,6 +73,8 @@ Template.way_point6.onCreated(function () {
                 } else {
                     bounds.extend(place.geometry.location);
                 }
+                document.getElementById("lat6").value = place.geometry.location.lat();
+                document.getElementById("lng6").value = place.geometry.location.lng();
             });
             map.fitBounds(bounds);
         });
