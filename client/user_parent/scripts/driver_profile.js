@@ -21,12 +21,17 @@ Template.driver_profile.helpers({
     related_parents: () => {
         return SchoolServices.findOne({_id: Template.instance().data.school_service_id}).related_parents;
     },
-    // isUserAccepted:()=>{
-    //     if(Meteor.users.findOne({}));
-    // }
-
-    followers: () => {
+        followers: () => {
         return SchoolServices.findOne({_id: Template.instance().data.school_service_id}).related_parents.length;
+    },
+    isAcceptedUser: () => {
+        return SchoolServices.findOne({_id: Template.instance().data.school_service_id,'related_parents.parent_id': Meteor.userId(),'related_parents.status':"Accepted"});
+    },
+    isNewUser: () => {
+        return !SchoolServices.findOne({_id: Template.instance().data.school_service_id, 'related_parents.parent_id': {$in: [Meteor.userId()]}});
+    },
+    isPendingUser: () => {
+        return SchoolServices.findOne({_id: Template.instance().data.school_service_id, 'related_parents.parent_id': Meteor.userId(),'related_parents.status':"Pending"});
     }
 });
 

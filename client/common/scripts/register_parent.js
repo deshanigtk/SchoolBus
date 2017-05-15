@@ -34,8 +34,9 @@ Template.register_parent.events({
                     },
                     driver_ids: [String]
                 }, function (error) {
+                    $('#submit').attr("disabled", false);
                     if (error !== undefined) {
-                        console.log(error);
+                        alert(error.reason);
                     } else {
                         const user_id = Meteor.userId();
                         Meteor.call('add_roles', user_id);
@@ -62,5 +63,10 @@ Template.register_parent.events({
             $('#submit').removeAttr("disabled");
 
         }
+    },
+    'click #already_registered': function (event) {
+        event.preventDefault();
+
+        return Router.go('sign-in');
     }
 });

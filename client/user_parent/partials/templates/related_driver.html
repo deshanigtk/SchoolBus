@@ -1,13 +1,13 @@
 <template name="related_driver">
-    <div id="single_search_result">
+    <div id="single_driver_record">
         <div class="col-lg-5 col-xs-6">
             <!-- small box -->
             <div class="small-box bg-aqua">
                 <div class="inner">
-                    <h3>{{driver.profile.first_name}} {{driver.profile.last_name}}</h3>
+                    <h3>{{profile.first_name}} {{profile.last_name}}</h3>
 
-                    <p> PLATE NO: {{driver.profile.contact_no}}</p>
-                    <img src="{{driver.profile.image}}" class="img-circle" width="100px" height="100px">
+                    <p> CONTACT NO: {{profile.contact_no}}</p>
+                    <img src="{{profile.image}}" class="img-circle" width="100px" height="100px">
                 </div>
 
                 <a href="#" class="small-box-footer">View Profile<i class="fa fa-arrow-circle-right"></i></a>

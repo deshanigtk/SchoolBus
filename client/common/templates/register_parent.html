@@ -8,49 +8,57 @@
             <p class="login-box-msg" id="helper_text" name="helper_text">Register a new membership</p>
             <form role="form">
                 <div class="form-group has-feedback">
-                    <input type="text" class="form-control" placeholder="First name" id="parentFirstName" name="parentFirstName">
+                    <input type="text" class="form-control" placeholder="First name" id="parentFirstName"
+                           name="parentFirstName" required>
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="text" class="form-control" placeholder="Last name" id="parentLastName" name="parentLastName">
+                    <input type="text" class="form-control" placeholder="Last name" id="parentLastName"
+                           name="parentLastName" required>
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="text" class="form-control" placeholder="NIC" id="parentNic" name="parentNic">
-                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
-                </div>
-                <div class="form-group">
-                    <label for="parentImage">User Image</label>
-                    <input type="file" id="parentImage" name="parentImage">
-
-                    <p class="help-block">Upload school service image.</p>
-                </div>
-                <div class="form-group has-feedback">
-                    <input type="text" class="form-control" placeholder="Contact No" id="parentContact" name="parentContact">
+                    <input type="text" class="form-control" placeholder="NIC" id="parentNic" name="parentNic" required>
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="email" class="form-control" placeholder="Email" id="parentEmail" name="parentEmail">
+                    <input type="text" class="form-control" placeholder="Contact No" id="parentContact"
+                           name="parentContact" required>
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="email" class="form-control" placeholder="Email" id="parentEmail" name="parentEmail"
+                           required>
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="password" class="form-control" placeholder="Password" id="parentPassword" name="parentPassword">
+                    <input type="password" class="form-control" placeholder="Password" id="parentPassword"
+                           name="parentPassword" required>
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
                     <input type="password" class="form-control" placeholder="Retype password" id="rePassword"
-                           name="rePassword">
+                           name="rePassword" required>
                     <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+                </div>
+                <div class="form-group">
+                    <label for="parentImage">User Image</label>
+                    <input type="file" id="parentImage" name="parentImage" required>
+
+                    <p class="help-block">Upload Your Image.</p>
                 </div>
                 <div class="row">
                     <!-- /.col -->
                     <div class="col-xs-4">
-                        <button type="submit" name="submitRegister" id="submitRegister" class="btn btn-primary btn-block btn-flat">Register</button>
+                        <button type="submit" name="submitRegister" id="submitRegister"
+                                class="btn btn-primary btn-block btn-flat">Register
+                        </button>
                     </div>
                     <!-- /.col -->
                 </div>
+
             </form>
-            <a href="authentication/sign_in.html" class="text-center">I already have a membership</a>
+            <a href="#" class="text-center" id="already_registered">I already have a membership</a>
         </div>
         <!-- /.form-box -->
     </div>

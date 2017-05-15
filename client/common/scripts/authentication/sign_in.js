@@ -8,6 +8,7 @@ Template.sign_in.events({
         const passwordVal = event.target.signInPassword.value;
 
         Meteor.loginWithPassword(emailVal, passwordVal, function (err) {
+            $('#submit').attr("disabled", false);
             if (err !== undefined) {
                 $('#email_div').addClass('has-error');
                 $('#password_div').addClass('has-error');
@@ -25,7 +26,7 @@ Template.sign_in.events({
                     return Router.go('account-deactivated');
                 }
                 if (Roles.userIsInRole(Meteor.userId(), 'parent')) {
-                    window.location.href = Meteor.absoluteUrl('/');
+                    window.location.href = Meteor.absoluteUrl('');
 
                 }
                 if (Roles.userIsInRole(Meteor.userId(), 'driver')) {
