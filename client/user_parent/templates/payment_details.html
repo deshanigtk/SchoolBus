@@ -1,101 +1,46 @@
 <template name="payment_details">
-    <div class="row">
+    <section class="content-header">
+        <h1>
+            Payment Details
+            <small>Payments can be done via PayPal</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="active">My Drivers</li>
+        </ol>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">Drivers List</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body" style="overflow-x: auto">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                            <tr>
+                                <th>Driver Name</th>
+                                <th>Contact Number</th>
+                                <th>Fee Amount</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {{#each payment_drivers}}
+                                {{>payment_driver}}
+                            {{/each}}
+                            </tbody>
+                        </table>
 
-        <div class="col-md-8">
-            <div class="box">
-                <div class="box-header">
-                    <h3 class="box-title">Payments Due</h3>
+                    </div>
+                    <!-- /.box-body -->
                 </div>
-                <!-- /.box-header -->
-                <div class="box-body">
-                    <table id="parentListTable" class="table table-bordered table-hover">
-                        <thead>
-                        <tr>
-                            <th>Driver Name</th>
-                            <th>Month</th>
-                            <th>Due Amount</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Deshani Geethika</td>
-                            <td>2</td>
-                            <td>3540</td>
-                        </tr>
-                        <tr>
-                            <td>Thejani Chathurangika</td>
-                            <td>3</td>
-                            <td>5698</td>
-                        </tr>
-                        </tbody>
-                        <tfoot>
-                        <tr>
-                            <th>Driver's Name</th>
-                            <th>Month</th>
-                            <th>Due Amount</th>
-                        </tr>
-                        </tfoot>
-                    </table>
-                </div>
-                <!-- /.box-body -->
+                <!-- /.box -->
+            </div>
+            <div class="col-md-5">
+                {{>paypalCreditCardForm}}
             </div>
         </div>
-    </div>
-    <div class="row">
-
-        <div class="col-md-8">
-            <div class="box">
-                <div class="box-header">
-                    <h3 class="box-title">Paid Details</h3>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body">
-                    <table id="parentListTable" class="table table-bordered table-hover">
-                        <thead>
-                        <tr>
-                            <th>Driver's Name</th>
-                            <th>Month</th>
-                            <th>Paid Amount</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Deshani Geethika</td>
-                            <td>2</td>
-                            <td>2500</td>
-                        </tr>
-                        <tr>
-                            <td>Thejani Chathurangika</td>
-                            <td>3</td>
-                            <td>3000</td>
-                        </tr>
-                        <tr>
-                            <td>Deshani Geethika</td>
-                            <td>2</td>
-                            <td>2500</td>
-                        </tr>
-                        <tr>
-                            <td>Thejani Chathurangika</td>
-                            <td>3</td>
-                            <td>3500</td>
-                        </tr>
-                        <tr>
-                            <td>Thejani Chathurangika</td>
-                            <td>1</td>
-                            <td>3500</td>
-                        </tr>
-                        </tbody>
-                        <tfoot>
-                        <tr>
-                            <th>Driver's Name</th>
-                            <th>Month</th>
-                            <th>Paid Amount</th>
-                        </tr>
-                        </tfoot>
-                    </table>
-                </div>
-                <!-- /.box-body -->
-            </div>
-        </div>
-    </div>
+    </section>
 </template>

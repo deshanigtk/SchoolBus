@@ -22,7 +22,7 @@ Meteor.methods({
             plate_no: school_service.plateNo,
             way_points: school_service.wayPoints,
             schools: school_service.schools,
-            // image: school_service.schoolServiceImageVar
+            image: school_service.schoolServiceImageVar
         });
     },
     send_request: function (school_service_id, parent) {
@@ -60,9 +60,18 @@ Meteor.methods({
         SchoolServices.update({_id: school_service_id}, {
             $set: {
                 "current_location.coordinate.lat": lat,
-                "current_location.coordinate.lng":lng
+                "current_location.coordinate.lng": lng
             }
         });
+    },
+
+    update_fee: function (school_service_id, parent_id, fee) {
+        SchoolServices.update({
+            _id: school_service_id, "related_parents.parent_id": parent_id
+        }, {
+            $set: {"related_parents.$.fee": fee}
+        });
     }
+
 });
 

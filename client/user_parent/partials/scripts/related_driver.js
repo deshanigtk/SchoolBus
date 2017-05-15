@@ -8,7 +8,7 @@ Template.related_driver.events({
                 side_bar_links: 'parent_side_bar_links',
                 master_data: {
                     school_service_id: SchoolServices.findOne({driver_id: Template.instance().data._id})._id,
-                    map_element: 'map',
+                    map_element: 'map'
                 },
             });
         } else {

@@ -51,6 +51,11 @@ RelatedParentsSchema = new SimpleSchema({
         type: String,
         label: "Feedback",
         optional:true
+    },
+    fee:{
+        type:Number,
+        label:"Fee",
+        optional:true
     }
 });
 
@@ -71,10 +76,10 @@ SchoolServicesSchema = new SimpleSchema({
         type: Number,
         label: "Seat Count"
     },
-    // image: {
-    //     type: String,
-    //     label: "School Service Image"
-    // },
+    image: {
+        type: String,
+        label: "School Service Image"
+    },
     way_points: {
         type: [LocationSchema],
         label: "Way Points"
