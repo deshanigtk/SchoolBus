@@ -18,12 +18,15 @@ Template.sign_in.events({
                 event.target.signInPassword.value = "";
 
                 $('#submit').removeAttr("disabled");
+
+                $('#signInEmail').focus();
             } else {
                 if (!Roles.userIsInRole(Meteor.userId(), 'active')) {
                     return Router.go('account-deactivated');
                 }
                 if (Roles.userIsInRole(Meteor.userId(), 'parent')) {
-                    window.location.href = Meteor.absoluteUrl('parent-dashboard')
+                    window.location.href = Meteor.absoluteUrl('/');
+
                 }
                 if (Roles.userIsInRole(Meteor.userId(), 'driver')) {
                     window.location.href = Meteor.absoluteUrl('parents-list');
@@ -35,5 +38,17 @@ Template.sign_in.events({
         event.preventDefault();
 
         return Router.go('forgot-password');
+    },
+    'click #new_member': function (event) {
+        event.preventDefault();
+
+        return Router.go('register');
     }
+});
+
+Template.sign_in.onCreated(function () {
+    const self = this;
+    self.autorun(function () {
+        self.subscribe('users');
+    });
 });

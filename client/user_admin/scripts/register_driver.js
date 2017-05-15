@@ -61,9 +61,8 @@ Template.register_driver.onCreated(function () {
     const self = this;
     self.autorun(function () {
         self.subscribe('school_services');
-    });
-    self.autorun(function () {
         self.subscribe('users');
+        self.subscribe('roles');
     });
 });
 

@@ -55,9 +55,11 @@
         <item url="file://$USER_HOME$/.meteor/packages/aldeed_schema-index/1.1.1/web.browser/lib/indexing.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_core/1.0.11/web.browser/lib/iron_core.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_core/1.0.11/web.browser/lib/version_conflict_error.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/arunoda_npm/0.2.6/web.browser/packages/arunoda:npm.js" />
         <item url="file://$USER_HOME$/.meteor/packages/aldeed_schema-deny/1.1.0/web.browser/lib/deny.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_dynamic-template/1.0.12/web.browser/blaze_overrides.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_dynamic-template/1.0.12/web.browser/dynamic_template.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/mrt_paypal/1.1.1/web.browser/packages/mrt:paypal.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_dynamic-template/1.0.12/web.browser/version_conflict_error.js" />
         <item url="file://$USER_HOME$/.meteor/packages/templating-runtime/1.3.0/web.browser/dynamic.js" />
         <item url="file://$USER_HOME$/.meteor/packages/templating-runtime/1.3.0/web.browser/templating.js" />
@@ -585,9 +587,11 @@
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_schema-index/1.1.1/web.browser/lib/indexing.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_core/1.0.11/web.browser/lib/iron_core.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_core/1.0.11/web.browser/lib/version_conflict_error.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/arunoda_npm/0.2.6/web.browser/packages/arunoda:npm.js" />
       <root url="file://$USER_HOME$/.meteor/packages/aldeed_schema-deny/1.1.0/web.browser/lib/deny.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_dynamic-template/1.0.12/web.browser/blaze_overrides.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_dynamic-template/1.0.12/web.browser/dynamic_template.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/mrt_paypal/1.1.1/web.browser/packages/mrt:paypal.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_dynamic-template/1.0.12/web.browser/version_conflict_error.js" />
       <root url="file://$USER_HOME$/.meteor/packages/templating-runtime/1.3.0/web.browser/dynamic.js" />
       <root url="file://$USER_HOME$/.meteor/packages/templating-runtime/1.3.0/web.browser/templating.js" />

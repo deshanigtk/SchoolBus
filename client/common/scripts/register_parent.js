@@ -4,25 +4,24 @@ Template.register_parent.events({
 
         $('#submit').attr("disabled", true);
 
-        const firstNameVal = event.target.firstName.value;
-        const lastNameVal = event.target.lastName.value;
+        const firstNameVal = event.target.parentFirstName.value;
+        const lastNameVal = event.target.parentLastName.value;
         const nicVal = event.target.parentNic.value;
         const contactVal = event.target.parentContact.value;
         const emailVal = event.target.parentEmail.value;
         const passwordVal = event.target.parentPassword.value;
         const confirmVal = event.target.rePassword.value;
 
-
-        if (passwordVal == confirmVal) {
+        if (passwordVal === confirmVal) {
 
 
             const parentImageVar = document.getElementById('parentImage').files[0];
 
             const reader = new FileReader();
 
-            reader.onload = function (event) {
+            reader.onload = function () {
 
-                const user_id = Accounts.createUser({
+                Accounts.createUser({
                     email: emailVal,
                     password: passwordVal,
 
@@ -34,23 +33,26 @@ Template.register_parent.events({
                         image: reader.result
                     },
                     driver_ids: [String]
+                }, function (error) {
+                    if (error !== undefined) {
+                        console.log(error);
+                    } else {
+                        const user_id = Meteor.userId();
+                        Meteor.call('add_roles', user_id);
+
+                        $('#helper_text').html('You have successfully registered to the system');
+                        event.target.parentFirstName.value = "";
+                        event.target.parentLastName.value = "";
+                        event.target.parentNic.value = "";
+                        event.target.parentContact.value = "";
+                        event.target.parentEmail.value = "";
+                        event.target.parentPassword.value = "";
+                        event.target.rePassword.value = "";
+                    }
                 });
             };
 
             reader.readAsDataURL(parentImageVar);
-            //
-
-            Roles.addUsersToRoles(user_id, ['parent', 'active']);
-            Accounts.sendEnrollmentEmail(user_id);
-
-            $('#helper_text').html('You have successfully registered to the system');
-            event.target.firstName.value = "";
-            event.target.lastName.value = "";
-            event.target.parentNic.value = "";
-            event.target.parentContact.value = "";
-            event.target.parentEmail.value = "";
-            event.target.parentPassword.value = "";
-            event.target.rePassword.value = "";
         }
         else {
             $('#helper_text').html('Entered passwords are not matching!');

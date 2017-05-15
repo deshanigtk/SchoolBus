@@ -1948,6 +1948,9 @@
         <item url="file://$USER_HOME$/.meteor/packages/http/1.1.8/npm/node_modules/process-nextick-args/test.js" />
         <item url="file://$USER_HOME$/.meteor/packages/http/1.1.8/npm/node_modules/generate-object-property/index.js" />
         <item url="file://$USER_HOME$/.meteor/packages/http/1.1.8/npm/node_modules/generate-object-property/test.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/mrt_paypal/1.1.1/npm/node_modules/paypal-rest-sdk/Gruntfile.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/mrt_paypal/1.1.1/npm/node_modules/paypal-rest-sdk/index.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/mrt_paypal/1.1.1/npm/node_modules/paypal-rest-sdk/lib/paypal-rest-sdk.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_router/1.1.2/npm/node_modules/grunt/lib/grunt.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_router/1.1.2/npm/node_modules/grunt/lib/util/task.js" />
         <item url="file://$USER_HOME$/.meteor/packages/iron_router/1.1.2/npm/node_modules/grunt/lib/grunt/help.js" />
@@ -7498,6 +7501,9 @@
       <root url="file://$USER_HOME$/.meteor/packages/http/1.1.8/npm/node_modules/process-nextick-args/test.js" />
       <root url="file://$USER_HOME$/.meteor/packages/http/1.1.8/npm/node_modules/generate-object-property/index.js" />
       <root url="file://$USER_HOME$/.meteor/packages/http/1.1.8/npm/node_modules/generate-object-property/test.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/mrt_paypal/1.1.1/npm/node_modules/paypal-rest-sdk/Gruntfile.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/mrt_paypal/1.1.1/npm/node_modules/paypal-rest-sdk/index.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/mrt_paypal/1.1.1/npm/node_modules/paypal-rest-sdk/lib/paypal-rest-sdk.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_router/1.1.2/npm/node_modules/grunt/lib/grunt.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_router/1.1.2/npm/node_modules/grunt/lib/util/task.js" />
       <root url="file://$USER_HOME$/.meteor/packages/iron_router/1.1.2/npm/node_modules/grunt/lib/grunt/help.js" />

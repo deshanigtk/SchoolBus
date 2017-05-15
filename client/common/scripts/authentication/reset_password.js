@@ -23,9 +23,7 @@ Template.reset_password.events({
                     $('#newPassword').focus();
 
                 } else {
-
                     return Router.go('sign-in');
-
                 }
 
             });
