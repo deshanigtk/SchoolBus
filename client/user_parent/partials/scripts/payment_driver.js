@@ -7,7 +7,6 @@ Template.payment_driver.helpers({
         console.log(cursor);
         for (var i = 0; i < cursor.length; i++) {
             if (cursor[i].parent_id === Meteor.userId()) {
-                console.log(cursor[i].fee);
                 return cursor[i].fee;
             }
         }
@@ -30,17 +29,31 @@ Template.payment_driver.events({
             }
         });
     },
-    'submit #pay_button': (event) => {
+    'click #pay_button': (event) => {
         event.preventDefault();
-        // const school_service_id = SchoolServices.findOne({driver_id: document.getElementById("driver_id").value})._id;
+        const school_service_id = SchoolServices.findOne({driver_id: Template.instance().data._id})._id;
         const parent_id = Meteor.userId();
-        const year = event.target.year.value;
-        const month = event.target.month.value;
-        // console.log(school_service_id);
-        console.log(year);
-        console.log(month);
+        const year = document.getElementById("year").value;
+        const month = document.getElementById("month").value;
 
-        // Meteor.call('pay_fee', school_service_id, parent_id, year, month, 2000);
+        let fee = 0;
+        const cursor = SchoolServices.findOne({
+            driver_id: Template.instance().data._id
+        }).related_parents;
+
+        console.log(cursor);
+        for (var i = 0; i < cursor.length; i++) {
+            if (cursor[i].parent_id === Meteor.userId()) {
+                fee = cursor[i].fee;
+                break;
+            }
+        }
+
+        Meteor.call('pay_fee', school_service_id, parent_id, year, month, fee, function (error) {
+            if (error !== undefined) {
+                alert(error);
+            }
+        });
     }
 });
 
