@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c127b5f-f34a-47ad-9b30-4130d1cd5781" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/methods/configurations.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/routes/routes_config.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client_tests/driver_management_tests.js" afterPath="$PROJECT_DIR$/client_tests/driver_management.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_npm.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_npm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/partials/scripts/nav_bar_main.js" afterPath="$PROJECT_DIR$/client/partials/scripts/nav_bar_main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/user_admin/templates/register_driver.html" afterPath="$PROJECT_DIR$/client/user_admin/templates/register_driver.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/user_driver/partials/scripts/driver_side_bar_links.js" afterPath="$PROJECT_DIR$/client/user_driver/partials/scripts/driver_side_bar_links.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/user_driver/partials/templates/driver_side_bar_links.html" afterPath="$PROJECT_DIR$/client/user_driver/partials/templates/driver_side_bar_links.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/user_parent/partials/scripts/parent_side_bar_links.js" afterPath="$PROJECT_DIR$/client/user_parent/partials/scripts/parent_side_bar_links.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/user_parent/partials/scripts/payment_driver.js" afterPath="$PROJECT_DIR$/client/user_parent/partials/scripts/payment_driver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/user_parent/partials/templates/payment_driver.html" afterPath="$PROJECT_DIR$/client/user_parent/partials/templates/payment_driver.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/admin_routes.js" afterPath="$PROJECT_DIR$/lib/admin_routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/driver_routes.js" afterPath="$PROJECT_DIR$/lib/driver_routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/parent_routes.js" afterPath="$PROJECT_DIR$/lib/parent_routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/routes.js" afterPath="$PROJECT_DIR$/lib/routes.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,11 +24,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="payment_driver.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/user_parent/partials/scripts/payment_driver.js">
+      <file leaf-file-name="driver_routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/driver_routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="259">
+              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -83,41 +84,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register_driver.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="parent_routes.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/parent_routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="49" column="41" lean-forward="false" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/admin_routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-781">
+              <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register_driver.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/user_admin/templates/register_driver.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="119" column="24" lean-forward="false" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
+            <state relative-caret-position="40">
+              <caret line="80" column="50" lean-forward="true" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="driver_management_methods.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/methods/driver_management_methods.js">
+      <file leaf-file-name="routes_config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/routes/routes_config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="81" column="6" lean-forward="true" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="payment_details.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/user_parent/templates/payment_details.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="payment_details.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/user_parent/scripts/payment_details.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            <state relative-caret-position="120">
+              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -153,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/partials/templates/side_bar.html" />
         <option value="$PROJECT_DIR$/client/user_parent/partials/templates/feedback.html" />
         <option value="$PROJECT_DIR$/client/partials/templates/map.html" />
         <option value="$PROJECT_DIR$/client/user_parent/scripts/parent_drivers_list.js" />
@@ -163,7 +163,6 @@
         <option value="$PROJECT_DIR$/client/user_parent/scripts/driver_profile.js" />
         <option value="$PROJECT_DIR$/client/user_parent/partials/scripts/related_driver.js" />
         <option value="$PROJECT_DIR$/client/user_parent/templates/driver_profile.html" />
-        <option value="$PROJECT_DIR$/lib/admin_routes.js" />
         <option value="$PROJECT_DIR$/collections/school_services.js" />
         <option value="$PROJECT_DIR$/client/user_parent/scripts/payment_details.js" />
         <option value="$PROJECT_DIR$/server/methods/search_algorithm.js" />
@@ -181,10 +180,8 @@
         <option value="$PROJECT_DIR$/client/user_admin/partials/templates/admin_side_bar_links.html" />
         <option value="$PROJECT_DIR$/client/user_parent/partials/scripts/side_bar_links.js" />
         <option value="$PROJECT_DIR$/client/user_parent/partials/templates/side_bar_links.html" />
-        <option value="$PROJECT_DIR$/lib/driver_routes.js" />
         <option value="$PROJECT_DIR$/client/user_parent/partials/templates/payment_form.html" />
         <option value="$PROJECT_DIR$/client/user_parent/partials/templates/parent_side_bar_links.html" />
-        <option value="$PROJECT_DIR$/lib/parent_routes.js" />
         <option value="$PROJECT_DIR$/client/user_admin/scripts/register_driver.js" />
         <option value="$PROJECT_DIR$/client/user_driver/templates/parents_list.html" />
         <option value="$PROJECT_DIR$/client/partials/scripts/nav_bar.js" />
@@ -204,6 +201,10 @@
         <option value="$PROJECT_DIR$/client_tests/driver_management_tests.js" />
         <option value="$PROJECT_DIR$/client_tests/driver_management.test.js" />
         <option value="$PROJECT_DIR$/client/user_admin/templates/register_driver.html" />
+        <option value="$PROJECT_DIR$/lib/routes.js" />
+        <option value="$PROJECT_DIR$/lib/driver_routes.js" />
+        <option value="$PROJECT_DIR$/lib/admin_routes.js" />
+        <option value="$PROJECT_DIR$/lib/parent_routes.js" />
       </list>
     </option>
   </component>
@@ -926,7 +927,7 @@
       <workItem from="1494861189057" duration="4125000" />
       <workItem from="1494868649819" duration="1690000" />
       <workItem from="1494878253674" duration="22918000" />
-      <workItem from="1494904350746" duration="4878000" />
+      <workItem from="1494904350746" duration="5280000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1487147334833</created>
@@ -1166,11 +1167,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494897323004</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="payments not working, routs created">
+      <created>1494909276117</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1494909276117</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="470829000" />
+    <option name="totallyTimeSpent" value="471231000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1232,7 +1240,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="adds a map still not working" />
     <MESSAGE value="account forget password and reset work.  Server methods for register driver" />
     <MESSAGE value="radio button input" />
     <MESSAGE value="added google map. interfaces" />
@@ -1257,7 +1264,8 @@
     <MESSAGE value="register driver add maps" />
     <MESSAGE value="parent payments interface created" />
     <MESSAGE value="payments not working" />
-    <option name="LAST_COMMIT_MESSAGE" value="payments not working" />
+    <MESSAGE value="payments not working, routs created" />
+    <option name="LAST_COMMIT_MESSAGE" value="payments not working, routs created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1322,14 +1330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-600">
           <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1403,14 +1403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/driver_routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/user_driver/templates/driver_payment_details.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1427,14 +1419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/admin_routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/user_driver/partials/templates/driver_side_bar_links.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1447,14 +1431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parent_routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="56" column="46" lean-forward="false" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1579,14 +1555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/routes_config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/methods/driver_management_methods.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1619,6 +1587,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/routes_config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/common/templates/register_parent.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1629,8 +1605,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/user_admin/templates/register_driver.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="119" column="24" lean-forward="false" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
+        <state relative-caret-position="40">
+          <caret line="80" column="50" lean-forward="true" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/admin_routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-781">
+          <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/driver_routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parent_routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="49" column="41" lean-forward="false" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
           <folding />
         </state>
       </provider>
