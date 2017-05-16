@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c127b5f-f34a-47ad-9b30-4130d1cd5781" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/dist/img/cover.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/user_parent/templates/driver_profile.html" afterPath="$PROJECT_DIR$/client/user_parent/templates/driver_profile.html" />
     </list>
@@ -105,14 +104,14 @@
       <file leaf-file-name="driver_profile.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/user_parent/templates/driver_profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+            <state relative-caret-position="200">
+              <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -985,7 +984,7 @@
       <workItem from="1494861189057" duration="4125000" />
       <workItem from="1494868649819" duration="1690000" />
       <workItem from="1494878253674" duration="22918000" />
-      <workItem from="1494904350746" duration="5649000" />
+      <workItem from="1494904350746" duration="6386000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1487147334833</created>
@@ -1239,11 +1238,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494909667091</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="cover photo">
+      <created>1494910035751</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1494910035751</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="471600000" />
+    <option name="totallyTimeSpent" value="472337000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1305,7 +1311,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="radio button input" />
     <MESSAGE value="added google map. interfaces" />
     <MESSAGE value="testing methods. not working" />
     <MESSAGE value="add a map2" />
@@ -1330,7 +1335,8 @@
     <MESSAGE value="payments not working" />
     <MESSAGE value="payments not working, routs created" />
     <MESSAGE value="routes changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="routes changed" />
+    <MESSAGE value="cover photo" />
+    <option name="LAST_COMMIT_MESSAGE" value="cover photo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1704,14 +1710,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/user_parent/templates/driver_profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        <state relative-caret-position="200">
+          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
