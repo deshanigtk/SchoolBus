@@ -2,10 +2,6 @@ Meteor.methods({
     search_school_service: function (start_lat, start_lng, school_lat, school_lng) {
         const cursor = SchoolServices.find({'schools.coordinate.lat': {$eq: school_lat}}, {'schools.coordinate.lng': {$eq: school_lng}});
 
-        // if (cursor===null){
-        //     console.log("****************************************3333333333333*");
-        //     return
-        // }
         var distanceObj = {};
         cursor.forEach(function (row) {
             var minValue = Number.MAX_SAFE_INTEGER;
@@ -27,7 +23,7 @@ Meteor.methods({
 
         var sortable = [];
         for (var obj in distanceObj) {
-            if (distanceObj[obj] < 1000) {
+            if (distanceObj[obj] < 2000) {
                 sortable.push([obj, distanceObj[obj]]);
             }
         }
