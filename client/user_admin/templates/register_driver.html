@@ -30,7 +30,7 @@
                             <div class="form-group">
                                 <label for="driverFirstName">First Name</label>
                                 <input type="text" class="form-control" id="driverFirstName"
-                                       placeholder="Enter driver's first name" name="driverFirstName">
+                                       placeholder="Enter driver's first name" name="driverFirstName" required>
                             </div>
                             <div class="form-group">
                                 <label for="driverLastName">Last Name</label>
@@ -40,7 +40,7 @@
                             <div class="form-group">
                                 <label for="driverNic">NIC</label>
                                 <input type="text" class="form-control" id="driverNic"
-                                       placeholder="Enter driver's NIC" name="driverNic" required>
+                                       placeholder="Enter driver's NIC" name="driverNic" min="10" max="10" required>
                             </div>
                             <div class="form-group">
                                 <label for="driverContactNo">Contact Number</label>
@@ -54,7 +54,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="driverImage">Driver Image</label>
-                                <input type="file" id="driverImage" name="driverImage">
+                                <input type="file" id="driverImage" name="driverImage" required>
 
                                 <p class="help-block">Upload driver image.</p>
                             </div>
@@ -88,7 +88,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="schoolServiceImage">School Service Image</label>
-                                <input type="file" id="schoolServiceImage" name="schoolServiceImage">
+                                <input type="file" id="schoolServiceImage" name="schoolServiceImage" required>
 
                                 <p class="help-block">Upload school service image.</p>
                             </div>

@@ -1,9 +1,18 @@
 Template.payment_driver.helpers({
     fee: () => {
-        return SchoolServices.findOne({
-            driver_id: Template.instance().data._id,
-            'related_parents.parent_id': Meteor.userId()
-        }).related_parents.$.fee;
+        const cursor = SchoolServices.findOne({
+            driver_id: Template.instance().data._id
+        }).related_parents;
+
+        console.log(cursor);
+        for (var i = 0; i < cursor.length; i++) {
+            if (cursor[i].parent_id === Meteor.userId()) {
+                console.log(cursor[i].fee);
+                return cursor[i].fee;
+            }
+        }
+        return null;
+
     }
 });
 Template.payment_driver.events({
@@ -21,17 +30,17 @@ Template.payment_driver.events({
             }
         });
     },
-    'click #pay_button': (event) => {
+    'submit #pay_button': (event) => {
         event.preventDefault();
-        const school_service_id = SchoolServices.findOne({driver_id: this.data._id})._id;
+        // const school_service_id = SchoolServices.findOne({driver_id: document.getElementById("driver_id").value})._id;
         const parent_id = Meteor.userId();
-        const year = document.getElementById("year").value;
-        const month = document.getElementById("month").value;
-        console.log(school_service_id);
+        const year = event.target.year.value;
+        const month = event.target.month.value;
+        // console.log(school_service_id);
         console.log(year);
         console.log(month);
 
-        Meteor.call('pay_fee', school_service_id, parent_id, year, month, 2000);
+        // Meteor.call('pay_fee', school_service_id, parent_id, year, month, 2000);
     }
 });
 
@@ -49,7 +58,7 @@ Template.paypalCreditCardForm.events({
         })
     }
 });
-Template.driver_profile.onCreated(function () {
+Template.payment_driver.onCreated(function () {
     const self = this;
     self.autorun(function () {
         self.subscribe('school_services');

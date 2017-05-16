@@ -5,7 +5,8 @@ Template.nav_bar_main.helpers({
 });
 
 Template.nav_bar_main.events({
-    'click #profile': () => {
+    'click #profile': (event) => {
+        event.preventDefault();
         Router.go('related-drivers');
     },
     'click #sign_out': () => {

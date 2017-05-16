@@ -7,7 +7,7 @@ Template.parent_side_bar_links.helpers({
     }
 });
 
-Template.admin_side_bar_links.events({
+Template.parent_side_bar_links.events({
     'click #related_drivers_link':function (event) {
         event.preventDefault();
         Router.go('related-drivers');
