@@ -1,7 +1,10 @@
 <template name="payment_driver">
-    <tr>
+    <tr id="single_payment_driver">
         <td>{{profile.first_name}} {{profile.last_name}}</td>
         <td>{{profile.contact_no}}</td>
-        <td>Amount</td>
+        <td>{{fee}}</td>
+        <td><input id="year" type="number" min="2017" max="2107"></td>
+        <td><input id="month" type="number" min="1" max="12"></td>
+        <td><button type="button" id="pay_button">PAY</button></td>
     </tr>
 </template>

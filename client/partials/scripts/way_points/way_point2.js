@@ -16,6 +16,13 @@ Template.way_point2.onCreated(function () {
     GoogleMaps.ready('exampleMap2', function (way_point2) {
         var map = way_point2.instance;
         var bounds = new google.maps.LatLngBounds();
+        start = new google.maps.LatLng(8.1, 80.6);
+        end = new google.maps.LatLng(8.1, 80.7);
+        bounds.extend(start);
+        bounds.extend(end);
+
+        map.fitBounds(bounds);
+        map.panToBounds(bounds);
 
 
         // Create the search box and link it to the UI element.

@@ -49,6 +49,14 @@ Meteor.methods({
 
             });
     },
+    reject_parent: function (school_service_id, parent_id, status) {
+        SchoolServices.update({
+            _id: school_service_id, "related_parents.parent_id": parent_id
+        }, {
+            $set: {"related_parents.$.status": status}
+        });
+    },
+
     send_feedback: function (school_service_id, parent_id, feedback) {
         SchoolServices.update({
             _id: school_service_id, "related_parents.parent_id": parent_id
@@ -71,7 +79,11 @@ Meteor.methods({
         }, {
             $set: {"related_parents.$.fee": fee}
         });
+    },
+    view_payments:function (school_service_id,parent_id) {
+        Payments.find({school_service_id:school_service_id,parent_id:parent_id});
     }
+
 
 });
 

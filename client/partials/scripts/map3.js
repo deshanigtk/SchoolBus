@@ -4,8 +4,8 @@ Template.map3.helpers({
         if (GoogleMaps.loaded()) {
             // Map initialization options
             return {
-                center: new google.maps.LatLng(6.927079, 79.861244),
-                zoom: 13
+                center: new google.maps.LatLng(8, 80.5),
+                zoom: 10
             };
         }
     }
@@ -15,11 +15,14 @@ Template.map3.onCreated(function () {
     // We can use the `ready` callback to interact with the map API once the map is ready.
     GoogleMaps.ready('schoolLocationMap', function (map3) {
         var map = map3.instance;
-        var bounds = new google.maps.LatLngBounds(
-            new google.maps.LatLng(9.223031, 79.464111),
-            new google.maps.LatLng(7.647298, 81.650391),
-            new google.maps.LatLng(9.818953, 80.211182),
-            new google.maps.LatLng(5.912756, 80.584717));
+        var bounds = new google.maps.LatLngBounds();
+        start = new google.maps.LatLng(8.1, 80.6);
+        end = new google.maps.LatLng(8.1, 80.7);
+        bounds.extend(start);
+        bounds.extend(end);
+
+        map.fitBounds(bounds);
+        map.panToBounds(bounds);
 
 
         // Create the search box and link it to the UI element.

@@ -7,5 +7,6 @@ Template.nav_bar.helpers({
 Template.nav_bar.events({
     'click #sign_out': () => {
         Meteor.logout();
-    }
+    },
+
 });

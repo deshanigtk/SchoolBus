@@ -19,12 +19,6 @@ Template.parents_list.helpers({
         return (status === "Accepted");
     },
 
-    // accepted_parents: () => {
-    //     return Meteor.users.find({_id:Meteor.userId(),related_parents:{status:"Accepted"}});
-    // },
-    // school_service: () => {
-    //     return SchoolServices.findOne({driver_id:Meteor.userId()});
-    // }
 });
 
 Template.parents_list.onRendered(function () {

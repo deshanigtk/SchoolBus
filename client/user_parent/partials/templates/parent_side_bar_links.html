@@ -1,0 +1,6 @@
+<template name="parent_side_bar_links">
+    <li class="header">DASHBOARD</li>
+    <!-- Optionally, you can add icons to the links -->
+    <li class="{{#if isRelatedDrivers}}active{{/if}}"><a href="#" id="related_drivers_link"><i class="fa fa-user"></i> <span>Drivers List</span></a></li>
+    <li class="{{#if isPaymentDetails}}active{{/if}}"><a href="#" id="payment_details_link"><i class="fa fa-link"></i> <span>Payment Details</span></a></li>
+</template>

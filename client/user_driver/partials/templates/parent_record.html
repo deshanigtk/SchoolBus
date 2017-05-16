@@ -5,6 +5,7 @@
         <td>{{parent.profile.nic}}</td>
         <td>{{parent.emails.[0].address}}</td>
         {{#if isRequestedParent}}
+            <td><input id="amount" type="number" min="0"></td>
             <td>
                 <button class="Button" name="accept" id="accept">ACCEPT</button>
             </td>
@@ -14,7 +15,7 @@
         {{/if}}
         {{#if isAcceptedParent}}
             <td>
-                <button class="Button" name="viewPayment" id="viewPayment">VIEW PAYMENT</button>
+                <button class="Button" name="view_payment" id="view_payment">VIEW PAYMENT</button>
             </td>
         {{/if}}
     </tr>

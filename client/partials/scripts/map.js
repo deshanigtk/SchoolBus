@@ -16,6 +16,7 @@ Template.map.helpers({
                     center: new google.maps.LatLng(6.927079, 79.861244),
                 }
             }
+
         }
     }
 });

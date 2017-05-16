@@ -5,12 +5,10 @@ Template.nav_bar_main.helpers({
 });
 
 Template.nav_bar_main.events({
-   'click #profile':()=>{
-        BlazeLayout.render('Master_layout',{
-            content:'related_drivers'
-        });
-   },
-    'click #sign_out':()=>{
-       Meteor.logout();
+    'click #profile': () => {
+        Router.go('related-drivers');
+    },
+    'click #sign_out': () => {
+        Meteor.logout();
     }
 });
